@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+username: vagrant
+ssh_key: C:/Users/Cedric/git/learningchef/yum/.kitchen/kitchen-vagrant/default-centos65/.vagrant/machines/default/virtualbox/private_key
+port: '2201'
+last_action: converge

@@ -1,0 +1,983 @@
+I, [2015-03-02T06:50:15.303435 #21856]  INFO -- default-centos65: -----> Creating <default-centos65>...
+I, [2015-03-02T06:50:18.418058 #21856]  INFO -- default-centos65: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-03-02T06:50:19.503775 #21856]  INFO -- default-centos65: ==> default: Box 'opscode-centos65' could not be found. Attempting to find and install...
+I, [2015-03-02T06:50:19.503775 #21856]  INFO -- default-centos65:     default: Box Provider: virtualbox
+I, [2015-03-02T06:50:19.505775 #21856]  INFO -- default-centos65:     default: Box Version: >= 0
+I, [2015-03-02T06:50:20.778030 #21856]  INFO -- default-centos65: ==> default: Adding box 'opscode-centos65' (v0) for provider: virtualbox
+I, [2015-03-02T06:50:20.778030 #21856]  INFO -- default-centos65:     default: Downloading: https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos65_chef-provisionerless.box
+I, [2015-03-02T06:50:21.752224 #21856]  INFO -- default-centos65: [K    default: Progress: 0% (Rate: 0/s, Estimated time remaining: --:--:--)[K    default: 
+I, [2015-03-02T06:50:21.761726 #21856]  INFO -- default-centos65: An error occurred while downloading the remote file. The error
+I, [2015-03-02T06:50:21.761726 #21856]  INFO -- default-centos65: message, if any, is reproduced below. Please fix this error and try
+I, [2015-03-02T06:50:21.762226 #21856]  INFO -- default-centos65: again.
+I, [2015-03-02T06:50:21.762226 #21856]  INFO -- default-centos65: 
+I, [2015-03-02T06:50:21.762226 #21856]  INFO -- default-centos65: The requested URL returned error: 404 Not Found
+E, [2015-03-02T06:50:21.814237 #21856] ERROR -- default-centos65: Create failed on instance <default-centos65>.
+E, [2015-03-02T06:50:21.814237 #21856] ERROR -- default-centos65: ------Exception-------
+E, [2015-03-02T06:50:21.814237 #21856] ERROR -- default-centos65: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2015-03-02T06:50:21.814237 #21856] ERROR -- default-centos65: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'opscode-centos65' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Adding box 'opscode-centos65' (v0) for provider: virtualbox
+    default: Downloading: https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos65_chef-provisionerless.box
+[K    default: Progress: 0% (Rate: 0/s, Estimated time remaining: --:--:--)[K    default:
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+The requested URL returned error: 404 Not Found
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2015-03-02T06:50:21.814237 #21856] ERROR -- default-centos65: ---Nested Exception---
+E, [2015-03-02T06:50:21.814237 #21856] ERROR -- default-centos65: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2015-03-02T06:50:21.814237 #21856] ERROR -- default-centos65: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider=virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'opscode-centos65' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Adding box 'opscode-centos65' (v0) for provider: virtualbox
+    default: Downloading: https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos65_chef-provisionerless.box
+[K    default: Progress: 0% (Rate: 0/s, Estimated time remaining: --:--:--)[K    default:
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+The requested URL returned error: 404 Not Found
+---- End output of vagrant up --no-provision --provider=virtualbox ----
+Ran vagrant up --no-provision --provider=virtualbox returned 1
+E, [2015-03-02T06:50:21.814737 #21856] ERROR -- default-centos65: ------Backtrace-------
+E, [2015-03-02T06:50:21.814737 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:69:in `rescue in run_command'
+E, [2015-03-02T06:50:21.814737 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2015-03-02T06:50:21.814737 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/driver/base.rb:182:in `run_command'
+E, [2015-03-02T06:50:21.814737 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:123:in `run'
+E, [2015-03-02T06:50:21.814737 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:68:in `create'
+E, [2015-03-02T06:50:21.814737 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-03-02T06:50:21.814737 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-03-02T06:50:21.814737 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:413:in `call'
+E, [2015-03-02T06:50:21.814737 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:413:in `block in synchronize_or_call'
+E, [2015-03-02T06:50:21.814737 #21856] ERROR -- default-centos65: <internal:prelude>:10:in `synchronize'
+E, [2015-03-02T06:50:21.814737 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:411:in `synchronize_or_call'
+E, [2015-03-02T06:50:21.814737 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-03-02T06:50:21.815237 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2015-03-02T06:50:21.815237 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-03-02T06:50:21.815237 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-03-02T06:50:21.815237 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:303:in `create_action'
+E, [2015-03-02T06:50:21.815237 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-03-02T06:50:21.815237 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-03-02T06:50:21.815237 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-03-02T06:50:21.815237 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-03-02T06:50:21.815237 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-03-02T06:50:21.815237 #21856] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-03-02T06:50:21.815237 #21856] ERROR -- default-centos65: ----------------------
+I, [2015-03-02T07:00:49.884326 #27620]  INFO -- default-centos65: -----> Creating <default-centos65>...
+I, [2015-03-02T07:00:53.206990 #27620]  INFO -- default-centos65: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2015-03-02T07:00:54.246198 #27620]  INFO -- default-centos65: ==> default: Importing base box 'learningchef/centos65'...
+I, [2015-03-02T07:01:12.377323 #27620]  INFO -- default-centos65: [KProgress: 20%[KProgress: 40%[KProgress: 60%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2015-03-02T07:01:13.514551 #27620]  INFO -- default-centos65: ==> default: Checking if box 'learningchef/centos65' is up to date...
+I, [2015-03-02T07:01:18.141976 #27620]  INFO -- default-centos65: ==> default: Setting the name of the VM: default-centos65_default_1425301277863_56163
+I, [2015-03-02T07:01:21.779704 #27620]  INFO -- default-centos65: ==> default: Fixed port collision for 22 => 2222. Now on port 2201.
+I, [2015-03-02T07:01:22.070262 #27620]  INFO -- default-centos65: ==> default: Clearing any previously set network interfaces...
+I, [2015-03-02T07:01:22.470842 #27620]  INFO -- default-centos65: ==> default: Preparing network interfaces based on configuration...
+I, [2015-03-02T07:01:22.471342 #27620]  INFO -- default-centos65:     default: Adapter 1: nat
+I, [2015-03-02T07:01:22.761400 #27620]  INFO -- default-centos65: ==> default: Forwarding ports...
+I, [2015-03-02T07:01:23.102968 #27620]  INFO -- default-centos65:     default: 22 => 2201 (adapter 1)
+I, [2015-03-02T07:01:24.002148 #27620]  INFO -- default-centos65: ==> default: Booting VM...
+I, [2015-03-02T07:01:24.966341 #27620]  INFO -- default-centos65: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2015-03-02T07:01:26.156579 #27620]  INFO -- default-centos65:     default: SSH address: 127.0.0.1:2201
+I, [2015-03-02T07:01:26.156579 #27620]  INFO -- default-centos65:     default: SSH username: vagrant
+I, [2015-03-02T07:01:26.156579 #27620]  INFO -- default-centos65:     default: SSH auth method: private key
+I, [2015-03-02T07:01:41.905728 #27620]  INFO -- default-centos65:     default: Warning: Connection timeout. Retrying...
+I, [2015-03-02T07:01:42.623371 #27620]  INFO -- default-centos65:     default: Warning: Remote connection disconnect. Retrying...
+I, [2015-03-02T07:01:44.692785 #27620]  INFO -- default-centos65:     default: 
+I, [2015-03-02T07:01:44.698286 #27620]  INFO -- default-centos65:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2015-03-02T07:01:44.698786 #27620]  INFO -- default-centos65:     default: this with a newly generated keypair for better security.
+I, [2015-03-02T07:01:46.081563 #27620]  INFO -- default-centos65:     default: 
+I, [2015-03-02T07:01:46.081563 #27620]  INFO -- default-centos65:     default: Inserting generated public key within guest...
+I, [2015-03-02T07:01:46.462639 #27620]  INFO -- default-centos65:     default: Removing insecure key from the guest if its present...
+I, [2015-03-02T07:01:46.693685 #27620]  INFO -- default-centos65:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2015-03-02T07:01:48.157978 #27620]  INFO -- default-centos65: ==> default: Machine booted and ready!
+I, [2015-03-02T07:01:48.157978 #27620]  INFO -- default-centos65: ==> default: Checking for guest additions in VM...
+I, [2015-03-02T07:01:48.472541 #27620]  INFO -- default-centos65: ==> default: Setting hostname...
+I, [2015-03-02T07:01:55.882523 #27620]  INFO -- default-centos65: ==> default: Machine not provisioning because `--no-provision` is specified.
+I, [2015-03-02T07:02:00.853517 #27620]  INFO -- default-centos65: Vagrant instance <default-centos65> created.
+I, [2015-03-02T07:02:00.855517 #27620]  INFO -- default-centos65: Finished creating <default-centos65> (1m10.97s).
+I, [2015-03-02T07:02:00.856517 #27620]  INFO -- default-centos65: -----> Converging <default-centos65>...
+I, [2015-03-02T07:02:00.859518 #27620]  INFO -- default-centos65: Preparing files for transfer
+I, [2015-03-02T07:02:00.860018 #27620]  INFO -- default-centos65: Preparing dna.json
+I, [2015-03-02T07:02:00.862018 #27620]  INFO -- default-centos65: Preparing current project directory as a cookbook
+I, [2015-03-02T07:02:00.919530 #27620]  INFO -- default-centos65: Removing non-cookbook files before transfer
+I, [2015-03-02T07:02:00.940034 #27620]  INFO -- default-centos65: Preparing solo.rb
+I, [2015-03-02T07:02:02.358318 #27620]  INFO -- default-centos65: -----> Installing Chef Omnibus (install only if missing)
+I, [2015-03-02T07:02:02.358318 #27620]  INFO -- default-centos65: downloading https://www.chef.io/chef/install.sh
+I, [2015-03-02T07:02:02.358318 #27620]  INFO -- default-centos65:   to file /tmp/install.sh
+I, [2015-03-02T07:02:02.358318 #27620]  INFO -- default-centos65: trying wget...
+I, [2015-03-02T07:02:02.718890 #27620]  INFO -- default-centos65: Downloading Chef  for el...
+I, [2015-03-02T07:02:02.719390 #27620]  INFO -- default-centos65: downloading https://www.chef.io/chef/metadata?v=&prerelease=false&nightlies=false&p=el&pv=6&m=x86_64
+I, [2015-03-02T07:02:02.719890 #27620]  INFO -- default-centos65:   to file /tmp/install.sh.2202/metadata.txt
+I, [2015-03-02T07:02:02.726891 #27620]  INFO -- default-centos65: trying wget...
+I, [2015-03-02T07:02:03.190984 #27620]  INFO -- default-centos65: url	https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-12.0.3-1.x86_64.rpm
+I, [2015-03-02T07:02:03.190984 #27620]  INFO -- default-centos65: md5	3634d1a3b6ae2e5977361075da0f44cc
+I, [2015-03-02T07:02:03.190984 #27620]  INFO -- default-centos65: sha256	0ec6162b9d0ca2b2016ff02781d84905f712d64c7a81d01b0df88f977832f310
+I, [2015-03-02T07:02:03.210488 #27620]  INFO -- default-centos65: downloaded metadata file looks valid...
+I, [2015-03-02T07:02:03.223991 #27620]  INFO -- default-centos65: downloading https://opscode-omnibus-packages.s3.amazonaws.com/el/6/x86_64/chef-12.0.3-1.x86_64.rpm
+I, [2015-03-02T07:02:03.224491 #27620]  INFO -- default-centos65:   to file /tmp/install.sh.2202/chef-12.0.3-1.x86_64.rpm
+I, [2015-03-02T07:02:03.224491 #27620]  INFO -- default-centos65: trying wget...
+I, [2015-03-02T07:02:03.483043 #27620]  INFO -- default-centos65: trying curl...
+I, [2015-03-02T07:03:16.685680 #27620]  INFO -- default-centos65: Comparing checksum with sha256sum...
+I, [2015-03-02T07:03:16.945232 #27620]  INFO -- default-centos65: Installing Chef 
+I, [2015-03-02T07:03:16.945232 #27620]  INFO -- default-centos65: installing with rpm...
+I, [2015-03-02T07:03:16.987741 #27620]  INFO -- default-centos65: warning: /tmp/install.sh.2202/chef-12.0.3-1.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2015-03-02T07:03:17.242792 #27620]  INFO -- default-centos65: Preparing...                                                            (100%)#                                           (100%)##                                          (100%)###                                         (100%)####                                        (100%)#####                                       (100%)######                                      (100%)#######                                     (100%)########                                    (100%)#########                                   (100%)##########                                  (100%)###########                                 (100%)############                                (100%)#############                               (100%)##############                              (100%)###############                             (100%)################                            (100%)#################                           (100%)##################                          (100%)###################                         (100%)####################                        (100%)#####################                       (100%)######################                      (100%)#######################                     (100%)########################                    (100%)#########################                   (100%)##########################                  (100%)###########################                 (100%)############################                (100%)#############################               (100%)##############################              (100%)###############################             (100%)################################            (100%)#################################           (100%)##################################          (100%)###################################         (100%)####################################        (100%)#####################################       (100%)######################################      (100%)#######################################     (100%)########################################    (100%)#########################################   (100%)##########################################  (100%)########################################### (100%)########################################### [100%]
+I, [2015-03-02T07:03:20.086360 #27620]  INFO -- default-centos65:    1:chef                                                               (  1%)#                                           (  3%)##                                          (  6%)###                                         (  8%)####                                        ( 10%)#####                                       ( 13%)######                                      ( 15%)#######                                     ( 17%)########                                    ( 19%)#########                                   ( 22%)##########                                  ( 24%)###########                                 ( 26%)############                                ( 28%)#############                               ( 31%)##############                              ( 33%)###############                             ( 35%)################                            ( 38%)#################                           ( 40%)##################                          ( 42%)###################                         ( 44%)####################                        ( 47%)#####################                       ( 49%)######################                      ( 51%)#######################                     ( 53%)########################                    ( 56%)#########################                   ( 58%)##########################                  ( 60%)###########################                 ( 63%)############################                ( 65%)#############################               ( 67%)##############################              ( 69%)###############################             ( 72%)################################            ( 74%)#################################           ( 76%)##################################          ( 78%)###################################         ( 81%)####################################        ( 83%)#####################################       ( 85%)######################################      ( 88%)#######################################     ( 90%)########################################    ( 92%)#########################################   ( 94%)##########################################  ( 97%)########################################### ( 99%)########################################### [100%]
+I, [2015-03-02T07:03:20.822007 #27620]  INFO -- default-centos65: Thank you for installing Chef!
+I, [2015-03-02T07:03:20.891521 #27620]  INFO -- default-centos65: Transferring files to <default-centos65>
+I, [2015-03-02T07:03:22.518346 #27620]  INFO -- default-centos65: Starting Chef Client, version 12.0.3
+I, [2015-03-02T07:03:34.078658 #27620]  INFO -- default-centos65: Compiling Cookbooks...
+I, [2015-03-02T07:03:34.079658 #27620]  INFO -- default-centos65: Converging 1 resources
+I, [2015-03-02T07:03:34.079658 #27620]  INFO -- default-centos65: Recipe: yum::default
+I, [2015-03-02T07:04:10.270395 #27620]  INFO -- default-centos65: 
+I, [2015-03-02T07:04:10.270895 #27620]  INFO -- default-centos65:     
+I, [2015-03-02T07:04:10.270895 #27620]  INFO -- default-centos65:     ================================================================================
+I, [2015-03-02T07:04:10.270895 #27620]  INFO -- default-centos65:     Error executing action `run` on resource 'execute[yum update]'
+I, [2015-03-02T07:04:10.273896 #27620]  INFO -- default-centos65:     ================================================================================
+I, [2015-03-02T07:04:10.273896 #27620]  INFO -- default-centos65:     
+I, [2015-03-02T07:04:10.274396 #27620]  INFO -- default-centos65:     Mixlib::ShellOut::ShellCommandFailed
+I, [2015-03-02T07:04:10.274396 #27620]  INFO -- default-centos65:     ------------------------------------
+I, [2015-03-02T07:04:10.274396 #27620]  INFO -- default-centos65:     Expected process to exit with [0], but received '1'
+I, [2015-03-02T07:04:10.274396 #27620]  INFO -- default-centos65:     ---- Begin output of yum update ----
+I, [2015-03-02T07:04:10.274396 #27620]  INFO -- default-centos65:     STDOUT: Loaded plugins: fastestmirror
+I, [2015-03-02T07:04:10.274396 #27620]  INFO -- default-centos65:     Determining fastest mirrors
+I, [2015-03-02T07:04:10.274396 #27620]  INFO -- default-centos65:      * base: mirror.rackspace.com
+I, [2015-03-02T07:04:10.274396 #27620]  INFO -- default-centos65:      * extras: mirrors.cmich.edu
+I, [2015-03-02T07:04:10.274396 #27620]  INFO -- default-centos65:      * updates: mirror.rackspace.com
+I, [2015-03-02T07:04:10.274396 #27620]  INFO -- default-centos65:     Setting up Update Process
+I, [2015-03-02T07:04:10.274896 #27620]  INFO -- default-centos65:     Resolving Dependencies
+I, [2015-03-02T07:04:10.274896 #27620]  INFO -- default-centos65:     --> Running transaction check
+I, [2015-03-02T07:04:10.274896 #27620]  INFO -- default-centos65:     ---> Package audit.x86_64 0:2.2-2.el6 will be updated
+I, [2015-03-02T07:04:10.274896 #27620]  INFO -- default-centos65:     ---> Package audit.x86_64 0:2.3.7-5.el6 will be an update
+I, [2015-03-02T07:04:10.274896 #27620]  INFO -- default-centos65:     ---> Package audit-libs.x86_64 0:2.2-2.el6 will be updated
+I, [2015-03-02T07:04:10.274896 #27620]  INFO -- default-centos65:     ---> Package audit-libs.x86_64 0:2.3.7-5.el6 will be an update
+I, [2015-03-02T07:04:10.274896 #27620]  INFO -- default-centos65:     ---> Package authconfig.x86_64 0:6.1.12-13.el6 will be updated
+I, [2015-03-02T07:04:10.274896 #27620]  INFO -- default-centos65:     ---> Package authconfig.x86_64 0:6.1.12-19.el6 will be an update
+I, [2015-03-02T07:04:10.274896 #27620]  INFO -- default-centos65:     ---> Package bash.x86_64 0:4.1.2-15.el6_4 will be updated
+I, [2015-03-02T07:04:10.274896 #27620]  INFO -- default-centos65:     ---> Package bash.x86_64 0:4.1.2-29.el6 will be an update
+I, [2015-03-02T07:04:10.275396 #27620]  INFO -- default-centos65:     ---> Package binutils.x86_64 0:2.20.51.0.2-5.36.el6 will be updated
+I, [2015-03-02T07:04:10.275396 #27620]  INFO -- default-centos65:     ---> Package binutils.x86_64 0:2.20.51.0.2-5.42.el6 will be an update
+I, [2015-03-02T07:04:10.275396 #27620]  INFO -- default-centos65:     ---> Package ca-certificates.noarch 0:2013.1.94-65.0.el6 will be updated
+I, [2015-03-02T07:04:10.275396 #27620]  INFO -- default-centos65:     ---> Package ca-certificates.noarch 0:2014.1.98-65.1.el6 will be an update
+I, [2015-03-02T07:04:10.275396 #27620]  INFO -- default-centos65:     ---> Package centos-release.x86_64 0:6-5.el6.centos.11.1 will be updated
+I, [2015-03-02T07:04:10.281397 #27620]  INFO -- default-centos65:     ---> Package centos-release.x86_64 0:6-6.el6.centos.12.2 will be an update
+I, [2015-03-02T07:04:10.281397 #27620]  INFO -- default-centos65:     ---> Package coreutils.x86_64 0:8.4-31.el6 will be updated
+I, [2015-03-02T07:04:10.281397 #27620]  INFO -- default-centos65:     ---> Package coreutils.x86_64 0:8.4-37.el6 will be an update
+I, [2015-03-02T07:04:10.281397 #27620]  INFO -- default-centos65:     ---> Package coreutils-libs.x86_64 0:8.4-31.el6 will be updated
+I, [2015-03-02T07:04:10.281397 #27620]  INFO -- default-centos65:     ---> Package coreutils-libs.x86_64 0:8.4-37.el6 will be an update
+I, [2015-03-02T07:04:10.281397 #27620]  INFO -- default-centos65:     ---> Package cpio.x86_64 0:2.10-11.el6_3 will be updated
+I, [2015-03-02T07:04:10.281397 #27620]  INFO -- default-centos65:     ---> Package cpio.x86_64 0:2.10-12.el6_5 will be an update
+I, [2015-03-02T07:04:10.281397 #27620]  INFO -- default-centos65:     ---> Package curl.x86_64 0:7.19.7-37.el6_4 will be updated
+I, [2015-03-02T07:04:10.281397 #27620]  INFO -- default-centos65:     ---> Package curl.x86_64 0:7.19.7-40.el6_6.4 will be an update
+I, [2015-03-02T07:04:10.281897 #27620]  INFO -- default-centos65:     ---> Package cyrus-sasl.x86_64 0:2.1.23-13.el6_3.1 will be updated
+I, [2015-03-02T07:04:10.281897 #27620]  INFO -- default-centos65:     ---> Package cyrus-sasl.x86_64 0:2.1.23-15.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.281897 #27620]  INFO -- default-centos65:     ---> Package cyrus-sasl-lib.x86_64 0:2.1.23-13.el6_3.1 will be updated
+I, [2015-03-02T07:04:10.281897 #27620]  INFO -- default-centos65:     ---> Package cyrus-sasl-lib.x86_64 0:2.1.23-15.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.281897 #27620]  INFO -- default-centos65:     ---> Package device-mapper.x86_64 0:1.02.79-8.el6 will be updated
+I, [2015-03-02T07:04:10.281897 #27620]  INFO -- default-centos65:     ---> Package device-mapper.x86_64 0:1.02.90-2.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.281897 #27620]  INFO -- default-centos65:     ---> Package device-mapper-event.x86_64 0:1.02.79-8.el6 will be updated
+I, [2015-03-02T07:04:10.281897 #27620]  INFO -- default-centos65:     ---> Package device-mapper-event.x86_64 0:1.02.90-2.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.281897 #27620]  INFO -- default-centos65:     ---> Package device-mapper-event-libs.x86_64 0:1.02.79-8.el6 will be updated
+I, [2015-03-02T07:04:10.281897 #27620]  INFO -- default-centos65:     ---> Package device-mapper-event-libs.x86_64 0:1.02.90-2.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.281897 #27620]  INFO -- default-centos65:     ---> Package device-mapper-libs.x86_64 0:1.02.79-8.el6 will be updated
+I, [2015-03-02T07:04:10.282397 #27620]  INFO -- default-centos65:     ---> Package device-mapper-libs.x86_64 0:1.02.90-2.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.282397 #27620]  INFO -- default-centos65:     ---> Package device-mapper-persistent-data.x86_64 0:0.2.8-2.el6 will be updated
+I, [2015-03-02T07:04:10.282397 #27620]  INFO -- default-centos65:     ---> Package device-mapper-persistent-data.x86_64 0:0.3.2-1.el6 will be an update
+I, [2015-03-02T07:04:10.282397 #27620]  INFO -- default-centos65:     ---> Package dhclient.x86_64 12:4.1.1-38.P1.el6.centos will be updated
+I, [2015-03-02T07:04:10.282397 #27620]  INFO -- default-centos65:     ---> Package dhclient.x86_64 12:4.1.1-43.P1.el6.centos.1 will be an update
+I, [2015-03-02T07:04:10.282397 #27620]  INFO -- default-centos65:     ---> Package dhcp-common.x86_64 12:4.1.1-38.P1.el6.centos will be updated
+I, [2015-03-02T07:04:10.282397 #27620]  INFO -- default-centos65:     ---> Package dhcp-common.x86_64 12:4.1.1-43.P1.el6.centos.1 will be an update
+I, [2015-03-02T07:04:10.282397 #27620]  INFO -- default-centos65:     ---> Package dracut.noarch 0:004-335.el6 will be updated
+I, [2015-03-02T07:04:10.282397 #27620]  INFO -- default-centos65:     ---> Package dracut.noarch 0:004-356.el6 will be an update
+I, [2015-03-02T07:04:10.282397 #27620]  INFO -- default-centos65:     ---> Package dracut-kernel.noarch 0:004-335.el6 will be updated
+I, [2015-03-02T07:04:10.282897 #27620]  INFO -- default-centos65:     ---> Package dracut-kernel.noarch 0:004-356.el6 will be an update
+I, [2015-03-02T07:04:10.282897 #27620]  INFO -- default-centos65:     ---> Package e2fsprogs.x86_64 0:1.41.12-18.el6 will be updated
+I, [2015-03-02T07:04:10.282897 #27620]  INFO -- default-centos65:     ---> Package e2fsprogs.x86_64 0:1.41.12-21.el6 will be an update
+I, [2015-03-02T07:04:10.282897 #27620]  INFO -- default-centos65:     ---> Package e2fsprogs-libs.x86_64 0:1.41.12-18.el6 will be updated
+I, [2015-03-02T07:04:10.282897 #27620]  INFO -- default-centos65:     ---> Package e2fsprogs-libs.x86_64 0:1.41.12-21.el6 will be an update
+I, [2015-03-02T07:04:10.337408 #27620]  INFO -- default-centos65: be updated
+I, [2015-03-02T07:04:10.337408 #27620]  INFO -- default-centos65:     ---> Package efibootmgr.x86_64 0:0.5.4-12.el6 will be an update
+I, [2015-03-02T07:04:10.337408 #27620]  INFO -- default-centos65:     ---> Package elfutils-libelf.x86_64 0:0.152-1.el6 will be updated
+I, [2015-03-02T07:04:10.337408 #27620]  INFO -- default-centos65:     ---> Package elfutils-libelf.x86_64 0:0.158-3.2.el6 will be an update
+I, [2015-03-02T07:04:10.337408 #27620]  INFO -- default-centos65:     ---> Package ethtool.x86_64 2:3.5-1.el6 will be updated
+I, [2015-03-02T07:04:10.337408 #27620]  INFO -- default-centos65:     ---> Package ethtool.x86_64 2:3.5-5.el6 will be an update
+I, [2015-03-02T07:04:10.337908 #27620]  INFO -- default-centos65:     ---> Package file.x86_64 0:5.04-15.el6 will be updated
+I, [2015-03-02T07:04:10.337908 #27620]  INFO -- default-centos65:     ---> Package file.x86_64 0:5.04-21.el6 will be an update
+I, [2015-03-02T07:04:10.337908 #27620]  INFO -- default-centos65:     ---> Package file-libs.x86_64 0:5.04-15.el6 will be updated
+I, [2015-03-02T07:04:10.337908 #27620]  INFO -- default-centos65:     ---> Package file-libs.x86_64 0:5.04-21.el6 will be an update
+I, [2015-03-02T07:04:10.337908 #27620]  INFO -- default-centos65:     ---> Package glib2.x86_64 0:2.26.1-3.el6 will be updated
+I, [2015-03-02T07:04:10.337908 #27620]  INFO -- default-centos65:     ---> Package glib2.x86_64 0:2.28.8-4.el6 will be an update
+I, [2015-03-02T07:04:10.337908 #27620]  INFO -- default-centos65:     ---> Package glibc.x86_64 0:2.12-1.132.el6 will be updated
+I, [2015-03-02T07:04:10.337908 #27620]  INFO -- default-centos65:     ---> Package glibc.x86_64 0:2.12-1.149.el6_6.5 will be an update
+I, [2015-03-02T07:04:10.337908 #27620]  INFO -- default-centos65:     ---> Package glibc-common.x86_64 0:2.12-1.132.el6 will be updated
+I, [2015-03-02T07:04:10.337908 #27620]  INFO -- default-centos65:     ---> Package glibc-common.x86_64 0:2.12-1.149.el6_6.5 will be an update
+I, [2015-03-02T07:04:10.338409 #27620]  INFO -- default-centos65:     ---> Package gnupg2.x86_64 0:2.0.14-6.el6_4 will be updated
+I, [2015-03-02T07:04:10.338409 #27620]  INFO -- default-centos65:     ---> Package gnupg2.x86_64 0:2.0.14-8.el6 will be an update
+I, [2015-03-02T07:04:10.338409 #27620]  INFO -- default-centos65:     ---> Package grep.x86_64 0:2.6.3-4.el6 will be updated
+I, [2015-03-02T07:04:10.338409 #27620]  INFO -- default-centos65:     ---> Package grep.x86_64 0:2.6.3-6.el6 will be an update
+I, [2015-03-02T07:04:10.338409 #27620]  INFO -- default-centos65:     ---> Package grub.x86_64 1:0.97-83.el6 will be updated
+I, [2015-03-02T07:04:10.338409 #27620]  INFO -- default-centos65:     ---> Package grub.x86_64 1:0.97-93.el6 will be an update
+I, [2015-03-02T07:04:10.338409 #27620]  INFO -- default-centos65:     ---> Package grubby.x86_64 0:7.0.15-5.el6 will be updated
+I, [2015-03-02T07:04:10.338409 #27620]  INFO -- default-centos65:     ---> Package grubby.x86_64 0:7.0.15-7.el6 will be an update
+I, [2015-03-02T07:04:10.338409 #27620]  INFO -- default-centos65:     ---> Package gzip.x86_64 0:1.3.12-19.el6_4 will be updated
+I, [2015-03-02T07:04:10.338409 #27620]  INFO -- default-centos65:     ---> Package gzip.x86_64 0:1.3.12-22.el6 will be an update
+I, [2015-03-02T07:04:10.338409 #27620]  INFO -- default-centos65:     ---> Package hwdata.noarch 0:0.233-9.1.el6 will be updated
+I, [2015-03-02T07:04:10.338909 #27620]  INFO -- default-centos65:     ---> Package hwdata.noarch 0:0.233-11.1.el6 will be an update
+I, [2015-03-02T07:04:10.338909 #27620]  INFO -- default-centos65:     ---> Package initscripts.x86_64 0:9.03.40-2.el6.centos will be updated
+I, [2015-03-02T07:04:10.338909 #27620]  INFO -- default-centos65:     ---> Package initscripts.x86_64 0:9.03.46-1.el6.centos.1 will be an update
+I, [2015-03-02T07:04:10.338909 #27620]  INFO -- default-centos65:     ---> Package iproute.x86_64 0:2.6.32-31.el6 will be updated
+I, [2015-03-02T07:04:10.338909 #27620]  INFO -- default-centos65:     ---> Package iproute.x86_64 0:2.6.32-33.el6_6 will be an update
+I, [2015-03-02T07:04:10.338909 #27620]  INFO -- default-centos65:     ---> Package iptables.x86_64 0:1.4.7-11.el6 will be updated
+I, [2015-03-02T07:04:10.338909 #27620]  INFO -- default-centos65:     ---> Package iptables.x86_64 0:1.4.7-14.el6 will be an update
+I, [2015-03-02T07:04:10.338909 #27620]  INFO -- default-centos65:     ---> Package iptables-ipv6.x86_64 0:1.4.7-11.el6 will be updated
+I, [2015-03-02T07:04:10.338909 #27620]  INFO -- default-centos65:     ---> Package iptables-ipv6.x86_64 0:1.4.7-14.el6 will be an update
+I, [2015-03-02T07:04:10.338909 #27620]  INFO -- default-centos65:     ---> Package kernel.x86_64 0:2.6.32-504.8.1.el6 will be installed
+I, [2015-03-02T07:04:10.339409 #27620]  INFO -- default-centos65:     ---> Package kernel-firmware.noarch 0:2.6.32-431.el6 will be updated
+I, [2015-03-02T07:04:10.339409 #27620]  INFO -- default-centos65:     ---> Package kernel-firmware.noarch 0:2.6.32-504.8.1.el6 will be an update
+I, [2015-03-02T07:04:10.339409 #27620]  INFO -- default-centos65:     ---> Package keyutils.x86_64 0:1.4-4.el6 will be updated
+I, [2015-03-02T07:04:10.339409 #27620]  INFO -- default-centos65:     ---> Package keyutils.x86_64 0:1.4-5.el6 will be an update
+I, [2015-03-02T07:04:10.339409 #27620]  INFO -- default-centos65:     ---> Package keyutils-libs.x86_64 0:1.4-4.el6 will be updated
+I, [2015-03-02T07:04:10.339409 #27620]  INFO -- default-centos65:     ---> Package keyutils-libs.x86_64 0:1.4-5.el6 will be an update
+I, [2015-03-02T07:04:10.371415 #27620]  INFO -- default-centos65: 
+I, [2015-03-02T07:04:10.371415 #27620]  INFO -- default-centos65:     ---> Package krb5-libs.x86_64 0:1.10.3-33.el6 will be an update
+I, [2015-03-02T07:04:10.371415 #27620]  INFO -- default-centos65:     ---> Package less.x86_64 0:436-10.el6 will be updated
+I, [2015-03-02T07:04:10.371415 #27620]  INFO -- default-centos65:     ---> Package less.x86_64 0:436-13.el6 will be an update
+I, [2015-03-02T07:04:10.371415 #27620]  INFO -- default-centos65:     ---> Package libblkid.x86_64 0:2.17.2-12.14.el6 will be updated
+I, [2015-03-02T07:04:10.371415 #27620]  INFO -- default-centos65:     ---> Package libblkid.x86_64 0:2.17.2-12.18.el6 will be an update
+I, [2015-03-02T07:04:10.371415 #27620]  INFO -- default-centos65:     ---> Package libcom_err.x86_64 0:1.41.12-18.el6 will be updated
+I, [2015-03-02T07:04:10.371415 #27620]  INFO -- default-centos65:     ---> Package libcom_err.x86_64 0:1.41.12-21.el6 will be an update
+I, [2015-03-02T07:04:10.371915 #27620]  INFO -- default-centos65:     ---> Package libcurl.x86_64 0:7.19.7-37.el6_4 will be updated
+I, [2015-03-02T07:04:10.371915 #27620]  INFO -- default-centos65:     ---> Package libcurl.x86_64 0:7.19.7-40.el6_6.4 will be an update
+I, [2015-03-02T07:04:10.371915 #27620]  INFO -- default-centos65:     ---> Package libdrm.x86_64 0:2.4.45-2.el6 will be updated
+I, [2015-03-02T07:04:10.371915 #27620]  INFO -- default-centos65:     ---> Package libdrm.x86_64 0:2.4.52-4.el6 will be an update
+I, [2015-03-02T07:04:10.371915 #27620]  INFO -- default-centos65:     ---> Package libgcc.x86_64 0:4.4.7-4.el6 will be updated
+I, [2015-03-02T07:04:10.371915 #27620]  INFO -- default-centos65:     ---> Package libgcc.x86_64 0:4.4.7-11.el6 will be an update
+I, [2015-03-02T07:04:10.371915 #27620]  INFO -- default-centos65:     ---> Package libgomp.x86_64 0:4.4.7-4.el6 will be updated
+I, [2015-03-02T07:04:10.371915 #27620]  INFO -- default-centos65:     ---> Package libgomp.x86_64 0:4.4.7-11.el6 will be an update
+I, [2015-03-02T07:04:10.372415 #27620]  INFO -- default-centos65:     ---> Package libpciaccess.x86_64 0:0.13.1-2.el6 will be updated
+I, [2015-03-02T07:04:10.372415 #27620]  INFO -- default-centos65:     ---> Package libpciaccess.x86_64 0:0.13.3-0.1.el6 will be an update
+I, [2015-03-02T07:04:10.372415 #27620]  INFO -- default-centos65:     ---> Package libselinux.x86_64 0:2.0.94-5.3.el6_4.1 will be updated
+I, [2015-03-02T07:04:10.372415 #27620]  INFO -- default-centos65:     ---> Package libselinux.x86_64 0:2.0.94-5.8.el6 will be an update
+I, [2015-03-02T07:04:10.372415 #27620]  INFO -- default-centos65:     ---> Package libselinux-utils.x86_64 0:2.0.94-5.3.el6_4.1 will be updated
+I, [2015-03-02T07:04:10.372415 #27620]  INFO -- default-centos65:     ---> Package libselinux-utils.x86_64 0:2.0.94-5.8.el6 will be an update
+I, [2015-03-02T07:04:10.372415 #27620]  INFO -- default-centos65:     ---> Package libss.x86_64 0:1.41.12-18.el6 will be updated
+I, [2015-03-02T07:04:10.372415 #27620]  INFO -- default-centos65:     ---> Package libss.x86_64 0:1.41.12-21.el6 will be an update
+I, [2015-03-02T07:04:10.372415 #27620]  INFO -- default-centos65:     ---> Package libssh2.x86_64 0:1.4.2-1.el6 will be updated
+I, [2015-03-02T07:04:10.372915 #27620]  INFO -- default-centos65:     ---> Package libssh2.x86_64 0:1.4.2-1.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.372915 #27620]  INFO -- default-centos65:     ---> Package libstdc++.x86_64 0:4.4.7-4.el6 will be updated
+I, [2015-03-02T07:04:10.372915 #27620]  INFO -- default-centos65:     ---> Package libstdc++.x86_64 0:4.4.7-11.el6 will be an update
+I, [2015-03-02T07:04:10.372915 #27620]  INFO -- default-centos65:     ---> Package libtasn1.x86_64 0:2.3-3.el6_2.1 will be updated
+I, [2015-03-02T07:04:10.372915 #27620]  INFO -- default-centos65:     ---> Package libtasn1.x86_64 0:2.3-6.el6_5 will be an update
+I, [2015-03-02T07:04:10.372915 #27620]  INFO -- default-centos65:     ---> Package libtirpc.x86_64 0:0.2.1-6.el6_4 will be updated
+I, [2015-03-02T07:04:10.372915 #27620]  INFO -- default-centos65:     ---> Package libtirpc.x86_64 0:0.2.1-10.el6 will be an update
+I, [2015-03-02T07:04:10.372915 #27620]  INFO -- default-centos65:     ---> Package libudev.x86_64 0:147-2.51.el6 will be updated
+I, [2015-03-02T07:04:10.372915 #27620]  INFO -- default-centos65:     ---> Package libudev.x86_64 0:147-2.57.el6 will be an update
+I, [2015-03-02T07:04:10.373416 #27620]  INFO -- default-centos65:     ---> Package libuuid.x86_64 0:2.17.2-12.14.el6 will be updated
+I, [2015-03-02T07:04:10.373416 #27620]  INFO -- default-centos65:     ---> Package libuuid.x86_64 0:2.17.2-12.18.el6 will be an update
+I, [2015-03-02T07:04:10.373416 #27620]  INFO -- default-centos65:     ---> Package libxml2.x86_64 0:2.7.6-14.el6 will be updated
+I, [2015-03-02T07:04:10.373416 #27620]  INFO -- default-centos65:     ---> Package libxml2.x86_64 0:2.7.6-17.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.373416 #27620]  INFO -- default-centos65:     ---> Package lvm2.x86_64 0:2.02.100-8.el6 will be updated
+I, [2015-03-02T07:04:10.373416 #27620]  INFO -- default-centos65:     ---> Package lvm2.x86_64 0:2.02.111-2.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.379917 #27620]  INFO -- default-centos65:     ---> Package lvm2-libs.x86_64 0:2.02.100-8.el6 will be updated
+I, [2015-03-02T07:04:10.379917 #27620]  INFO -- default-centos65:     ---> Package lvm2-libs.x86_64 0:2.02.111-2.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.379917 #27620]  INFO -- default-centos65:     ---> Package module-init-tools.x86_64 0:3.9-21.el6_4 will be updated
+I, [2015-03-02T07:04:10.380417 #27620]  INFO -- default-centos65:     ---> Package module-init-tools.x86_64 0:3.9-24.el6 will be an update
+I, [2015-03-02T07:04:10.380417 #27620]  INFO -- default-centos65:     ---> Package mysql-libs.x86_64 0:5.1.71-1.el6 will be updated
+I, [2015-03-02T07:04:10.380417 #27620]  INFO -- default-centos65:     ---> Package mysql-libs.x86_64 0:5.1.73-3.el6_5 will be an update
+I, [2015-03-02T07:04:10.380417 #27620]  INFO -- default-centos65:     ---> Package nfs-utils.x86_64 1:1.2.3-39.el6 will be updated
+I, [2015-03-02T07:04:10.380417 #27620]  INFO -- default-centos65:     ---> Package nfs-utils.x86_64 1:1.2.3-54.el6 will be an update
+I, [2015-03-02T07:04:10.380417 #27620]  INFO -- default-centos65:     ---> Package nfs-utils-lib.x86_64 0:1.1.5-6.el6 will be updated
+I, [2015-03-02T07:04:10.380417 #27620]  INFO -- default-centos65:     ---> Package nfs-utils-lib.x86_64 0:1.1.5-9.el6 will be an update
+I, [2015-03-02T07:04:10.380417 #27620]  INFO -- default-centos65:     ---> Package nspr.x86_64 0:4.10.0-1.el6 will be updated
+I, [2015-03-02T07:04:10.380417 #27620]  INFO -- default-centos65:     ---> Package nspr.x86_64 0:4.10.6-1.el6_5 will be an update
+I, [2015-03-02T07:04:10.380917 #27620]  INFO -- default-centos65:     ---> Package nss.x86_64 0:3.15.1-15.el6 will be updated
+I, [2015-03-02T07:04:10.380917 #27620]  INFO -- default-centos65:     ---> Package nss.x86_64 0:3.16.2.3-3.el6_6 will be an update
+I, [2015-03-02T07:04:10.380917 #27620]  INFO -- default-centos65:     ---> Package nss-softokn.x86_64 0:3.14.3-9.el6 will be updated
+I, [2015-03-02T07:04:10.380917 #27620]  INFO -- default-centos65:     ---> Package nss-softokn.x86_64 0:3.14.3-22.el6_6 will be an update
+I, [2015-03-02T07:04:10.380917 #27620]  INFO -- default-centos65:     ---> Package nss-softokn-freebl.x86_64 0:3.14.3-9.el6 will be updated
+I, [2015-03-02T07:04:10.380917 #27620]  INFO -- default-centos65:     ---> Package nss-softokn-freebl.x86_64 0:3.14.3-22.el6_6 will be an update
+I, [2015-03-02T07:04:10.380917 #27620]  INFO -- default-centos65:     ---> Package nss-sysinit.x86_64 0:3.15.1-15.el6 will be updated
+I, [2015-03-02T07:04:10.380917 #27620]  INFO -- default-centos65:     ---> Package nss-sysinit.x86_64 0:3.16.2.3-3.el6_6 will be an update
+I, [2015-03-02T07:04:10.380917 #27620]  INFO -- default-centos65:     ---> Package nss-tools.x86_64 0:3.15.1-15.el6 will be updated
+I, [2015-03-02T07:04:10.415924 #27620]  INFO -- default-centos65: --> Package nss-tools.x86_64 0:3.16.2.3-3.el6_6 will be an update
+I, [2015-03-02T07:04:10.415924 #27620]  INFO -- default-centos65:     ---> Package nss-util.x86_64 0:3.15.1-3.el6 will be updated
+I, [2015-03-02T07:04:10.416424 #27620]  INFO -- default-centos65:     ---> Package nss-util.x86_64 0:3.16.2.3-2.el6_6 will be an update
+I, [2015-03-02T07:04:10.416424 #27620]  INFO -- default-centos65:     ---> Package openldap.x86_64 0:2.4.23-32.el6_4.1 will be updated
+I, [2015-03-02T07:04:10.416424 #27620]  INFO -- default-centos65:     ---> Package openldap.x86_64 0:2.4.39-8.el6 will be an update
+I, [2015-03-02T07:04:10.416424 #27620]  INFO -- default-centos65:     ---> Package openssh.x86_64 0:5.3p1-94.el6 will be updated
+I, [2015-03-02T07:04:10.416424 #27620]  INFO -- default-centos65:     ---> Package openssh.x86_64 0:5.3p1-104.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.416424 #27620]  INFO -- default-centos65:     ---> Package openssh-clients.x86_64 0:5.3p1-94.el6 will be updated
+I, [2015-03-02T07:04:10.416424 #27620]  INFO -- default-centos65:     ---> Package openssh-clients.x86_64 0:5.3p1-104.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.416924 #27620]  INFO -- default-centos65:     ---> Package openssh-server.x86_64 0:5.3p1-94.el6 will be updated
+I, [2015-03-02T07:04:10.416924 #27620]  INFO -- default-centos65:     ---> Package openssh-server.x86_64 0:5.3p1-104.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.416924 #27620]  INFO -- default-centos65:     ---> Package openssl.x86_64 0:1.0.1e-15.el6 will be updated
+I, [2015-03-02T07:04:10.416924 #27620]  INFO -- default-centos65:     ---> Package openssl.x86_64 0:1.0.1e-30.el6_6.5 will be an update
+I, [2015-03-02T07:04:10.416924 #27620]  INFO -- default-centos65:     ---> Package p11-kit.x86_64 0:0.18.5-2.el6 will be updated
+I, [2015-03-02T07:04:10.416924 #27620]  INFO -- default-centos65:     ---> Package p11-kit.x86_64 0:0.18.5-2.el6_5.2 will be an update
+I, [2015-03-02T07:04:10.416924 #27620]  INFO -- default-centos65:     ---> Package p11-kit-trust.x86_64 0:0.18.5-2.el6 will be updated
+I, [2015-03-02T07:04:10.416924 #27620]  INFO -- default-centos65:     ---> Package p11-kit-trust.x86_64 0:0.18.5-2.el6_5.2 will be an update
+I, [2015-03-02T07:04:10.417424 #27620]  INFO -- default-centos65:     ---> Package pam.x86_64 0:1.1.1-17.el6 will be updated
+I, [2015-03-02T07:04:10.417424 #27620]  INFO -- default-centos65:     ---> Package pam.x86_64 0:1.1.1-20.el6 will be an update
+I, [2015-03-02T07:04:10.426426 #27620]  INFO -- default-centos65:     ---> Package pciutils-libs.x86_64 0:3.1.10-2.el6 will be updated
+I, [2015-03-02T07:04:10.426426 #27620]  INFO -- default-centos65:     ---> Package pciutils-libs.x86_64 0:3.1.10-4.el6 will be an update
+I, [2015-03-02T07:04:10.426426 #27620]  INFO -- default-centos65:     ---> Package plymouth.x86_64 0:0.8.3-27.el6.centos will be updated
+I, [2015-03-02T07:04:10.426426 #27620]  INFO -- default-centos65:     ---> Package plymouth.x86_64 0:0.8.3-27.el6.centos.1 will be an update
+I, [2015-03-02T07:04:10.426426 #27620]  INFO -- default-centos65:     ---> Package plymouth-core-libs.x86_64 0:0.8.3-27.el6.centos will be updated
+I, [2015-03-02T07:04:10.426426 #27620]  INFO -- default-centos65:     ---> Package plymouth-core-libs.x86_64 0:0.8.3-27.el6.centos.1 will be an update
+I, [2015-03-02T07:04:10.426426 #27620]  INFO -- default-centos65:     ---> Package plymouth-scripts.x86_64 0:0.8.3-27.el6.centos will be updated
+I, [2015-03-02T07:04:10.426426 #27620]  INFO -- default-centos65:     ---> Package plymouth-scripts.x86_64 0:0.8.3-27.el6.centos.1 will be an update
+I, [2015-03-02T07:04:10.426926 #27620]  INFO -- default-centos65:     ---> Package policycoreutils.x86_64 0:2.0.83-19.39.el6 will be updated
+I, [2015-03-02T07:04:10.426926 #27620]  INFO -- default-centos65:     ---> Package policycoreutils.x86_64 0:2.0.83-19.47.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.426926 #27620]  INFO -- default-centos65:     ---> Package postfix.x86_64 2:2.6.6-2.2.el6_1 will be updated
+I, [2015-03-02T07:04:10.426926 #27620]  INFO -- default-centos65:     ---> Package postfix.x86_64 2:2.6.6-6.el6_5 will be an update
+I, [2015-03-02T07:04:10.426926 #27620]  INFO -- default-centos65:     ---> Package procps.x86_64 0:3.2.8-25.el6 will be updated
+I, [2015-03-02T07:04:10.426926 #27620]  INFO -- default-centos65:     ---> Package procps.x86_64 0:3.2.8-30.el6 will be an update
+I, [2015-03-02T07:04:10.426926 #27620]  INFO -- default-centos65:     ---> Package psmisc.x86_64 0:22.6-15.el6_0.1 will be updated
+I, [2015-03-02T07:04:10.426926 #27620]  INFO -- default-centos65:     ---> Package psmisc.x86_64 0:22.6-19.el6_5 will be an update
+I, [2015-03-02T07:04:10.426926 #27620]  INFO -- default-centos65:     ---> Package python.x86_64 0:2.6.6-51.el6 will be updated
+I, [2015-03-02T07:04:10.426926 #27620]  INFO -- default-centos65:     ---> Package python.x86_64 0:2.6.6-52.el6 will be an update
+I, [2015-03-02T07:04:10.427426 #27620]  INFO -- default-centos65:     ---> Package python-libs.x86_64 0:2.6.6-51.el6 will be updated
+I, [2015-03-02T07:04:10.427426 #27620]  INFO -- default-centos65:     ---> Package python-libs.x86_64 0:2.6.6-52.el6 will be an update
+I, [2015-03-02T07:04:10.427426 #27620]  INFO -- default-centos65:     ---> Package rpm.x86_64 0:4.8.0-37.el6 will be updated
+I, [2015-03-02T07:04:10.427426 #27620]  INFO -- default-centos65:     ---> Package rpm.x86_64 0:4.8.0-38.el6_6 will be an update
+I, [2015-03-02T07:04:10.427426 #27620]  INFO -- default-centos65:     ---> Package rpm-libs.x86_64 0:4.8.0-37.el6 will be updated
+I, [2015-03-02T07:04:10.427426 #27620]  INFO -- default-centos65:     ---> Package rpm-libs.x86_64 0:4.8.0-38.el6_6 will be an update
+I, [2015-03-02T07:04:10.427426 #27620]  INFO -- default-centos65:     ---> Package rpm-python.x86_64 0:4.8.0-37.el6 will be updated
+I, [2015-03-02T07:04:10.427426 #27620]  INFO -- default-centos65:     ---> Package rpm-python.x86_64 0:4.8.0-38.el6_6 will be an update
+I, [2015-03-02T07:04:10.427426 #27620]  INFO -- default-centos65:     ---> Package rsyslog.x86_64 0:5.8.10-8.el6 will be updated
+I, [2015-03-02T07:04:10.427426 #27620]  INFO -- default-centos65:     ---> Package rsyslog.x86_64 0:5.8.10-10.el6_6 will be an update
+I, [2015-03-02T07:04:10.427926 #27620]  INFO -- default-centos65:     ---> Package selinux-policy.noarch 0:3.7.19-231.el6 will be updated
+I, [2015-03-02T07:04:10.427926 #27620]  INFO -- default-centos65:     ---> Package selinux-policy.noarch 0:3.7.19-260.el6_6.2 will be an update
+I, [2015-03-02T07:04:10.427926 #27620]  INFO -- default-centos65:     ---> Package selinux-policy-targeted.noarch 0:3.7.19-231.el6 will be updated
+I, [2015-03-02T07:04:10.427926 #27620]  INFO -- default-centos65:     ---> Package selinux-policy-targeted.noarch 0:3.7.19-260.el6_6.2 will be an update
+I, [2015-03-02T07:04:10.427926 #27620]  INFO -- default-centos65:     ---> Package shadow-utils.x86_64 2:4.1.4.2-13.el6 will be updated
+I, [2015-03-02T07:04:10.427926 #27620]  INFO -- default-centos65:     ---> Package shadow-utils.x86_64 2:4.1.4.2-19.el6 will be an update
+I, [2015-03-02T07:04:10.427926 #27620]  INFO -- default-centos65:     ---> Package shared-mime-info.x86_64 0:0.70-4.el6 will be updated
+I, [2015-03-02T07:04:10.427926 #27620]  INFO -- default-centos65:     ---> Package shared-mime-info.x86_64 0:0.70-6.el6 will be an update
+I, [2015-03-02T07:04:10.427926 #27620]  INFO -- default-centos65:     ---> Package sudo.x86_64 0:1.8.6p3-12.el6 will be updated
+I, [2015-03-02T07:04:10.427926 #27620]  INFO -- default-centos65:     ---> Package sudo.x86_64 0:1.8.6p3-15.el6 will be an update
+I, [2015-03-02T07:04:10.428427 #27620]  INFO -- default-centos65:     ---> Package system-config-firewall-base.noarch 0:1.2.27-5.el6 will be updated
+I, [2015-03-02T07:04:10.428427 #27620]  INFO -- default-centos65:     ---> Package system-config-firewall-base.noarch 0:1.2.27-7.2.el6_6 will be an update
+I, [2015-03-02T07:04:10.428427 #27620]  INFO -- default-centos65:     ---> Package tzdata.noarch 0:2013g-1.el6 will be updated
+I, [2015-03-02T07:04:10.428427 #27620]  INFO -- default-centos65:     ---> Package tzdata.noarch 0:2015a-1.el6 will be an update
+I, [2015-03-02T07:04:10.428427 #27620]  INFO -- default-centos65:     ---> Package udev.x86_64 0:147-2.51.el6 will be updated
+I, [2015-03-02T07:04:10.428427 #27620]  INFO -- default-centos65:     ---> Package udev.x86_64 0:147-2.57.el6 will be an update
+I, [2015-03-02T07:04:10.428427 #27620]  INFO -- default-centos65:     ---> Package upstart.x86_64 0:0.6.5-12.el6_4.1 will be updated
+I, [2015-03-02T07:04:10.428427 #27620]  INFO -- default-centos65:     ---> Package upstart.x86_64 0:0.6.5-13.el6_5.3 will be an update
+I, [2015-03-02T07:04:10.428427 #27620]  INFO -- default-centos65:     ---> Package util-linux-ng.x86_64 0:2.17.2-12.14.el6 will be updated
+I, [2015-03-02T07:04:10.428427 #27620]  INFO -- default-centos65:     ---> Package util-linux-ng.x86_64 0:2.17.2-12.18.el6 will be an update
+I, [2015-03-02T07:04:10.428927 #27620]  INFO -- default-centos65:     ---> Package wget.x86_64 0:1.12-1.8.el6 will be updated
+I, [2015-03-02T07:04:10.428927 #27620]  INFO -- default-centos65:     ---> Package wget.x86_64 0:1.12-5.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.428927 #27620]  INFO -- default-centos65:     ---> Package xz-libs.x86_64 0:4.999.9-0.3.beta.20091007git.el6 will be updated
+I, [2015-03-02T07:04:10.428927 #27620]  INFO -- default-centos65:     ---> Package xz-libs.x86_64 0:4.999.9-0.5.beta.20091007git.el6 will be an update
+I, [2015-03-02T07:04:10.448931 #27620]  INFO -- default-centos65: ---> Package yum.noarch 0:3.2.29-40.el6.centos will be updated
+I, [2015-03-02T07:04:10.448931 #27620]  INFO -- default-centos65:     ---> Package yum.noarch 0:3.2.29-60.el6.centos will be an update
+I, [2015-03-02T07:04:10.448931 #27620]  INFO -- default-centos65:     ---> Package yum-plugin-fastestmirror.noarch 0:1.1.30-14.el6 will be updated
+I, [2015-03-02T07:04:10.448931 #27620]  INFO -- default-centos65:     ---> Package yum-plugin-fastestmirror.noarch 0:1.1.30-30.el6 will be an update
+I, [2015-03-02T07:04:10.448931 #27620]  INFO -- default-centos65:     --> Finished Dependency Resolution
+I, [2015-03-02T07:04:10.448931 #27620]  INFO -- default-centos65:     
+I, [2015-03-02T07:04:10.448931 #27620]  INFO -- default-centos65:     Dependencies Resolved
+I, [2015-03-02T07:04:10.449431 #27620]  INFO -- default-centos65:     
+I, [2015-03-02T07:04:10.449431 #27620]  INFO -- default-centos65:     ================================================================================
+I, [2015-03-02T07:04:10.449431 #27620]  INFO -- default-centos65:      Package                       Arch   Version                     Repository
+I, [2015-03-02T07:04:10.449431 #27620]  INFO -- default-centos65:                                                                         Size
+I, [2015-03-02T07:04:10.449431 #27620]  INFO -- default-centos65:     ================================================================================
+I, [2015-03-02T07:04:10.449431 #27620]  INFO -- default-centos65:     Installing:
+I, [2015-03-02T07:04:10.449931 #27620]  INFO -- default-centos65:      kernel                        x86_64 2.6.32-504.8.1.el6          updates  29 M
+I, [2015-03-02T07:04:10.449931 #27620]  INFO -- default-centos65:     Updating:
+I, [2015-03-02T07:04:10.449931 #27620]  INFO -- default-centos65:      audit                         x86_64 2.3.7-5.el6                 base    208 k
+I, [2015-03-02T07:04:10.449931 #27620]  INFO -- default-centos65:      audit-libs                    x86_64 2.3.7-5.el6                 base     71 k
+I, [2015-03-02T07:04:10.449931 #27620]  INFO -- default-centos65:      authconfig                    x86_64 6.1.12-19.el6               base    377 k
+I, [2015-03-02T07:04:10.449931 #27620]  INFO -- default-centos65:      bash                          x86_64 4.1.2-29.el6                base    907 k
+I, [2015-03-02T07:04:10.449931 #27620]  INFO -- default-centos65:      binutils                      x86_64 2.20.51.0.2-5.42.el6        base    2.8 M
+I, [2015-03-02T07:04:10.455932 #27620]  INFO -- default-centos65:      ca-certificates               noarch 2014.1.98-65.1.el6          base    1.1 M
+I, [2015-03-02T07:04:10.455932 #27620]  INFO -- default-centos65:      centos-release                x86_64 6-6.el6.centos.12.2         base     21 k
+I, [2015-03-02T07:04:10.455932 #27620]  INFO -- default-centos65:      coreutils                     x86_64 8.4-37.el6                  base    3.0 M
+I, [2015-03-02T07:04:10.455932 #27620]  INFO -- default-centos65:      coreutils-libs                x86_64 8.4-37.el6                  base     50 k
+I, [2015-03-02T07:04:10.456432 #27620]  INFO -- default-centos65:      cpio                          x86_64 2.10-12.el6_5               base    192 k
+I, [2015-03-02T07:04:10.456432 #27620]  INFO -- default-centos65:      curl                          x86_64 7.19.7-40.el6_6.4           updates 194 k
+I, [2015-03-02T07:04:10.456432 #27620]  INFO -- default-centos65:      cyrus-sasl                    x86_64 2.1.23-15.el6_6.1           updates  78 k
+I, [2015-03-02T07:04:10.456432 #27620]  INFO -- default-centos65:      cyrus-sasl-lib                x86_64 2.1.23-15.el6_6.1           updates 136 k
+I, [2015-03-02T07:04:10.456432 #27620]  INFO -- default-centos65:      device-mapper                 x86_64 1.02.90-2.el6_6.1           updates 173 k
+I, [2015-03-02T07:04:10.456432 #27620]  INFO -- default-centos65:      device-mapper-event           x86_64 1.02.90-2.el6_6.1           updates 122 k
+I, [2015-03-02T07:04:10.456432 #27620]  INFO -- default-centos65:      device-mapper-event-libs      x86_64 1.02.90-2.el6_6.1           updates 116 k
+I, [2015-03-02T07:04:10.456432 #27620]  INFO -- default-centos65:      device-mapper-libs            x86_64 1.02.90-2.el6_6.1           updates 218 k
+I, [2015-03-02T07:04:10.456432 #27620]  INFO -- default-centos65:      device-mapper-persistent-data x86_64 0.3.2-1.el6                 base    2.5 M
+I, [2015-03-02T07:04:10.456432 #27620]  INFO -- default-centos65:      dhclient                      x86_64 12:4.1.1-43.P1.el6.centos.1 updates 318 k
+I, [2015-03-02T07:04:10.456932 #27620]  INFO -- default-centos65:      dhcp-common                   x86_64 12:4.1.1-43.P1.el6.centos.1 updates 143 k
+I, [2015-03-02T07:04:10.456932 #27620]  INFO -- default-centos65:      dracut                        noarch 004-356.el6                 base    123 k
+I, [2015-03-02T07:04:10.456932 #27620]  INFO -- default-centos65:      dracut-kernel                 noarch 004-356.el6                 base     25 k
+I, [2015-03-02T07:04:10.456932 #27620]  INFO -- default-centos65:      e2fsprogs                     x86_64 1.41.12-21.el6              base    553 k
+I, [2015-03-02T07:04:10.456932 #27620]  INFO -- default-centos65:      e2fsprogs-libs                x86_64 1.41.12-21.el6              base    121 k
+I, [2015-03-02T07:04:10.456932 #27620]  INFO -- default-centos65:      efibootmgr                    x86_64 0.5.4-12.el6                base     38 k
+I, [2015-03-02T07:04:10.456932 #27620]  INFO -- default-centos65:      elfutils-libelf               x86_64 0.158-3.2.el6               base    182 k
+I, [2015-03-02T07:04:10.456932 #27620]  INFO -- default-centos65:      ethtool                       x86_64 2:3.5-5.el6                 base    101 k
+I, [2015-03-02T07:04:10.456932 #27620]  INFO -- default-centos65:      file                          x86_64 5.04-21.el6                 base     47 k
+I, [2015-03-02T07:04:10.456932 #27620]  INFO -- default-centos65:      file-libs                     x86_64 5.04-21.el6                 base    313 k
+I, [2015-03-02T07:04:10.457432 #27620]  INFO -- default-centos65:      glib2                         x86_64 2.28.8-4.el6                base    1.7 M
+I, [2015-03-02T07:04:10.457432 #27620]  INFO -- default-centos65:      glibc                         x86_64 2.12-1.149.el6_6.5          updates 3.8 M
+I, [2015-03-02T07:04:10.457432 #27620]  INFO -- default-centos65:      glibc-common                  x86_64 2.12-1.149.el6_6.5          updates  14 M
+I, [2015-03-02T07:04:10.457432 #27620]  INFO -- default-centos65:      gnupg2                        x86_64 2.0.14-8.el6                base    1.6 M
+I, [2015-03-02T07:04:10.457432 #27620]  INFO -- default-centos65:      grep                          x86_64 2.6.3-6.el6                 base    229 k
+I, [2015-03-02T07:04:10.457432 #27620]  INFO -- default-centos65:      grub                          x86_64 1:0.97-93.el6               base    936 k
+I, [2015-03-02T07:04:10.457432 #27620]  INFO -- default-centos65:      grubby                        x86_64 7.0.15-7.el6                base     43 k
+I, [2015-03-02T07:04:10.457432 #27620]  INFO -- default-centos65:      gzip                          x86_64 1.3.12-22.el6               base    116 k
+I, [2015-03-02T07:04:10.457432 #27620]  INFO -- default-centos65:      hwdata                        noarch 0.233-11.1.el6              base    1.2 M
+I, [2015-03-02T07:04:10.480437 #27620]  INFO -- default-centos65:      x86_64 9.03.46-1.el6.centos.1      updates 943 k
+I, [2015-03-02T07:04:10.480437 #27620]  INFO -- default-centos65:      iproute                       x86_64 2.6.32-33.el6_6             updates 365 k
+I, [2015-03-02T07:04:10.480437 #27620]  INFO -- default-centos65:      iptables                      x86_64 1.4.7-14.el6                base    252 k
+I, [2015-03-02T07:04:10.480437 #27620]  INFO -- default-centos65:      iptables-ipv6                 x86_64 1.4.7-14.el6                base    100 k
+I, [2015-03-02T07:04:10.480437 #27620]  INFO -- default-centos65:      kernel-firmware               noarch 2.6.32-504.8.1.el6          updates  14 M
+I, [2015-03-02T07:04:10.480437 #27620]  INFO -- default-centos65:      keyutils                      x86_64 1.4-5.el6                   base     39 k
+I, [2015-03-02T07:04:10.480437 #27620]  INFO -- default-centos65:      keyutils-libs                 x86_64 1.4-5.el6                   base     20 k
+I, [2015-03-02T07:04:10.480437 #27620]  INFO -- default-centos65:      krb5-libs                     x86_64 1.10.3-33.el6               base    765 k
+I, [2015-03-02T07:04:10.480937 #27620]  INFO -- default-centos65:      less                          x86_64 436-13.el6                  base    108 k
+I, [2015-03-02T07:04:10.480937 #27620]  INFO -- default-centos65:      libblkid                      x86_64 2.17.2-12.18.el6            base    116 k
+I, [2015-03-02T07:04:10.480937 #27620]  INFO -- default-centos65:      libcom_err                    x86_64 1.41.12-21.el6              base     37 k
+I, [2015-03-02T07:04:10.480937 #27620]  INFO -- default-centos65:      libcurl                       x86_64 7.19.7-40.el6_6.4           updates 166 k
+I, [2015-03-02T07:04:10.480937 #27620]  INFO -- default-centos65:      libdrm                        x86_64 2.4.52-4.el6                base    123 k
+I, [2015-03-02T07:04:10.480937 #27620]  INFO -- default-centos65:      libgcc                        x86_64 4.4.7-11.el6                base    102 k
+I, [2015-03-02T07:04:10.480937 #27620]  INFO -- default-centos65:      libgomp                       x86_64 4.4.7-11.el6                base    133 k
+I, [2015-03-02T07:04:10.480937 #27620]  INFO -- default-centos65:      libpciaccess                  x86_64 0.13.3-0.1.el6              base     24 k
+I, [2015-03-02T07:04:10.480937 #27620]  INFO -- default-centos65:      libselinux                    x86_64 2.0.94-5.8.el6              base    108 k
+I, [2015-03-02T07:04:10.480937 #27620]  INFO -- default-centos65:      libselinux-utils              x86_64 2.0.94-5.8.el6              base     82 k
+I, [2015-03-02T07:04:10.481437 #27620]  INFO -- default-centos65:      libss                         x86_64 1.41.12-21.el6              base     41 k
+I, [2015-03-02T07:04:10.481437 #27620]  INFO -- default-centos65:      libssh2                       x86_64 1.4.2-1.el6_6.1             updates 123 k
+I, [2015-03-02T07:04:10.481437 #27620]  INFO -- default-centos65:      libstdc++                     x86_64 4.4.7-11.el6                base    294 k
+I, [2015-03-02T07:04:10.481437 #27620]  INFO -- default-centos65:      libtasn1                      x86_64 2.3-6.el6_5                 base    238 k
+I, [2015-03-02T07:04:10.481437 #27620]  INFO -- default-centos65:      libtirpc                      x86_64 0.2.1-10.el6                base     79 k
+I, [2015-03-02T07:04:10.481437 #27620]  INFO -- default-centos65:      libudev                       x86_64 147-2.57.el6                base     75 k
+I, [2015-03-02T07:04:10.481437 #27620]  INFO -- default-centos65:      libuuid                       x86_64 2.17.2-12.18.el6            base     69 k
+I, [2015-03-02T07:04:10.481437 #27620]  INFO -- default-centos65:      libxml2                       x86_64 2.7.6-17.el6_6.1            updates 801 k
+I, [2015-03-02T07:04:10.481437 #27620]  INFO -- default-centos65:      lvm2                          x86_64 2.02.111-2.el6_6.1          updates 816 k
+I, [2015-03-02T07:04:10.481937 #27620]  INFO -- default-centos65:      lvm2-libs                     x86_64 2.02.111-2.el6_6.1          updates 901 k
+I, [2015-03-02T07:04:10.481937 #27620]  INFO -- default-centos65:      module-init-tools             x86_64 3.9-24.el6                  base    465 k
+I, [2015-03-02T07:04:10.481937 #27620]  INFO -- default-centos65:      mysql-libs                    x86_64 5.1.73-3.el6_5              base    1.2 M
+I, [2015-03-02T07:04:10.481937 #27620]  INFO -- default-centos65:      nfs-utils                     x86_64 1:1.2.3-54.el6              base    326 k
+I, [2015-03-02T07:04:10.481937 #27620]  INFO -- default-centos65:      nfs-utils-lib                 x86_64 1.1.5-9.el6                 base     68 k
+I, [2015-03-02T07:04:10.481937 #27620]  INFO -- default-centos65:      nspr                          x86_64 4.10.6-1.el6_5              base    113 k
+I, [2015-03-02T07:04:10.481937 #27620]  INFO -- default-centos65:      nss                           x86_64 3.16.2.3-3.el6_6            updates 834 k
+I, [2015-03-02T07:04:10.481937 #27620]  INFO -- default-centos65:      nss-softokn                   x86_64 3.14.3-22.el6_6             updates 262 k
+I, [2015-03-02T07:04:10.482437 #27620]  INFO -- default-centos65:      nss-softokn-freebl            x86_64 3.14.3-22.el6_6             updates 167 k
+I, [2015-03-02T07:04:10.482437 #27620]  INFO -- default-centos65:      nss-sysinit                   x86_64 3.16.2.3-3.el6_6            updates  44 k
+I, [2015-03-02T07:04:10.482437 #27620]  INFO -- default-centos65:      nss-tools                     x86_64 3.16.2.3-3.el6_6            updates 427 k
+I, [2015-03-02T07:04:10.482437 #27620]  INFO -- default-centos65:      nss-util                      x86_64 3.16.2.3-2.el6_6            updates  66 k
+I, [2015-03-02T07:04:10.482437 #27620]  INFO -- default-centos65:      openldap                      x86_64 2.4.39-8.el6                base    280 k
+I, [2015-03-02T07:04:10.482437 #27620]  INFO -- default-centos65:      openssh                       x86_64 5.3p1-104.el6_6.1           updates 272 k
+I, [2015-03-02T07:04:10.500441 #27620]  INFO -- default-centos65: 
+I, [2015-03-02T07:04:10.500441 #27620]  INFO -- default-centos65:      openssh-server                x86_64 5.3p1-104.el6_6.1           updates 321 k
+I, [2015-03-02T07:04:10.500441 #27620]  INFO -- default-centos65:      openssl                       x86_64 1.0.1e-30.el6_6.5           updates 1.5 M
+I, [2015-03-02T07:04:10.500441 #27620]  INFO -- default-centos65:      p11-kit                       x86_64 0.18.5-2.el6_5.2            base     94 k
+I, [2015-03-02T07:04:10.500441 #27620]  INFO -- default-centos65:      p11-kit-trust                 x86_64 0.18.5-2.el6_5.2            base     71 k
+I, [2015-03-02T07:04:10.500441 #27620]  INFO -- default-centos65:      pam                           x86_64 1.1.1-20.el6                base    659 k
+I, [2015-03-02T07:04:10.500941 #27620]  INFO -- default-centos65:      pciutils-libs                 x86_64 3.1.10-4.el6                base     34 k
+I, [2015-03-02T07:04:10.500941 #27620]  INFO -- default-centos65:      plymouth                      x86_64 0.8.3-27.el6.centos.1       base     89 k
+I, [2015-03-02T07:04:10.500941 #27620]  INFO -- default-centos65:      plymouth-core-libs            x86_64 0.8.3-27.el6.centos.1       base     88 k
+I, [2015-03-02T07:04:10.500941 #27620]  INFO -- default-centos65:      plymouth-scripts              x86_64 0.8.3-27.el6.centos.1       base     31 k
+I, [2015-03-02T07:04:10.500941 #27620]  INFO -- default-centos65:      policycoreutils               x86_64 2.0.83-19.47.el6_6.1        updates 650 k
+I, [2015-03-02T07:04:10.500941 #27620]  INFO -- default-centos65:      postfix                       x86_64 2:2.6.6-6.el6_5             base    2.0 M
+I, [2015-03-02T07:04:10.500941 #27620]  INFO -- default-centos65:      procps                        x86_64 3.2.8-30.el6                base    214 k
+I, [2015-03-02T07:04:10.500941 #27620]  INFO -- default-centos65:      psmisc                        x86_64 22.6-19.el6_5               base     81 k
+I, [2015-03-02T07:04:10.500941 #27620]  INFO -- default-centos65:      python                        x86_64 2.6.6-52.el6                base     74 k
+I, [2015-03-02T07:04:10.500941 #27620]  INFO -- default-centos65:      python-libs                   x86_64 2.6.6-52.el6                base    5.3 M
+I, [2015-03-02T07:04:10.501441 #27620]  INFO -- default-centos65:      rpm                           x86_64 4.8.0-38.el6_6              updates 901 k
+I, [2015-03-02T07:04:10.501441 #27620]  INFO -- default-centos65:      rpm-libs                      x86_64 4.8.0-38.el6_6              updates 313 k
+I, [2015-03-02T07:04:10.501441 #27620]  INFO -- default-centos65:      rpm-python                    x86_64 4.8.0-38.el6_6              updates  57 k
+I, [2015-03-02T07:04:10.501441 #27620]  INFO -- default-centos65:      rsyslog                       x86_64 5.8.10-10.el6_6             updates 650 k
+I, [2015-03-02T07:04:10.501441 #27620]  INFO -- default-centos65:      selinux-policy                noarch 3.7.19-260.el6_6.2          updates 863 k
+I, [2015-03-02T07:04:10.501441 #27620]  INFO -- default-centos65:      selinux-policy-targeted       noarch 3.7.19-260.el6_6.2          updates 3.0 M
+I, [2015-03-02T07:04:10.501441 #27620]  INFO -- default-centos65:      shadow-utils                  x86_64 2:4.1.4.2-19.el6            base    899 k
+I, [2015-03-02T07:04:10.501441 #27620]  INFO -- default-centos65:      shared-mime-info              x86_64 0.70-6.el6                  base    209 k
+I, [2015-03-02T07:04:10.501441 #27620]  INFO -- default-centos65:      sudo                          x86_64 1.8.6p3-15.el6              base    704 k
+I, [2015-03-02T07:04:10.501441 #27620]  INFO -- default-centos65:      system-config-firewall-base   noarch 1.2.27-7.2.el6_6            updates 434 k
+I, [2015-03-02T07:04:10.501941 #27620]  INFO -- default-centos65:      tzdata                        noarch 2015a-1.el6                 updates 440 k
+I, [2015-03-02T07:04:10.501941 #27620]  INFO -- default-centos65:      udev                          x86_64 147-2.57.el6                base    349 k
+I, [2015-03-02T07:04:10.501941 #27620]  INFO -- default-centos65:      upstart                       x86_64 0.6.5-13.el6_5.3            base    177 k
+I, [2015-03-02T07:04:10.501941 #27620]  INFO -- default-centos65:      util-linux-ng                 x86_64 2.17.2-12.18.el6            base    1.6 M
+I, [2015-03-02T07:04:10.501941 #27620]  INFO -- default-centos65:      wget                          x86_64 1.12-5.el6_6.1              updates 483 k
+I, [2015-03-02T07:04:10.501941 #27620]  INFO -- default-centos65:      xz-libs                       x86_64 4.999.9-0.5.beta.20091007git.el6
+I, [2015-03-02T07:04:10.501941 #27620]  INFO -- default-centos65:                                                                base     89 k
+I, [2015-03-02T07:04:10.501941 #27620]  INFO -- default-centos65:      yum                           noarch 3.2.29-60.el6.centos        base    1.0 M
+I, [2015-03-02T07:04:10.502441 #27620]  INFO -- default-centos65:      yum-plugin-fastestmirror      noarch 1.1.30-30.el6               base     31 k
+I, [2015-03-02T07:04:10.502441 #27620]  INFO -- default-centos65:     
+I, [2015-03-02T07:04:10.502441 #27620]  INFO -- default-centos65:     Transaction Summary
+I, [2015-03-02T07:04:10.502441 #27620]  INFO -- default-centos65:     ================================================================================
+I, [2015-03-02T07:04:10.502441 #27620]  INFO -- default-centos65:     Install       1 Package(s)
+I, [2015-03-02T07:04:10.502441 #27620]  INFO -- default-centos65:     Upgrade     113 Package(s)
+I, [2015-03-02T07:04:10.502441 #27620]  INFO -- default-centos65:     
+I, [2015-03-02T07:04:10.502441 #27620]  INFO -- default-centos65:     Total download size: 116 M
+I, [2015-03-02T07:04:10.502441 #27620]  INFO -- default-centos65:     Is this ok [y/N]: Exiting on user Command
+I, [2015-03-02T07:04:10.502441 #27620]  INFO -- default-centos65:     STDERR: 
+I, [2015-03-02T07:04:10.502941 #27620]  INFO -- default-centos65:     ---- End output of yum update ----
+I, [2015-03-02T07:04:10.502941 #27620]  INFO -- default-centos65:     Ran yum update returned 1
+I, [2015-03-02T07:04:10.528447 #27620]  INFO -- default-centos65:     
+I, [2015-03-02T07:04:10.528947 #27620]  INFO -- default-centos65:     Resource Declaration:
+I, [2015-03-02T07:04:10.528947 #27620]  INFO -- default-centos65:     ---------------------
+I, [2015-03-02T07:04:10.528947 #27620]  INFO -- default-centos65:     # In /tmp/kitchen/cookbooks/yum/recipes/default.rb
+I, [2015-03-02T07:04:10.528947 #27620]  INFO -- default-centos65:     
+I, [2015-03-02T07:04:10.528947 #27620]  INFO -- default-centos65:      10: execute "yum update" do
+I, [2015-03-02T07:04:10.528947 #27620]  INFO -- default-centos65:      11:   command "yum update"
+I, [2015-03-02T07:04:10.528947 #27620]  INFO -- default-centos65:      12: end
+I, [2015-03-02T07:04:10.528947 #27620]  INFO -- default-centos65:      13: 
+I, [2015-03-02T07:04:10.528947 #27620]  INFO -- default-centos65:     
+I, [2015-03-02T07:04:10.529447 #27620]  INFO -- default-centos65:     Compiled Resource:
+I, [2015-03-02T07:04:10.529447 #27620]  INFO -- default-centos65:     ------------------
+I, [2015-03-02T07:04:10.529447 #27620]  INFO -- default-centos65:     # Declared in /tmp/kitchen/cookbooks/yum/recipes/default.rb:10:in `from_file'
+I, [2015-03-02T07:04:10.529447 #27620]  INFO -- default-centos65:     
+I, [2015-03-02T07:04:10.529447 #27620]  INFO -- default-centos65:     execute("yum update") do
+I, [2015-03-02T07:04:10.529447 #27620]  INFO -- default-centos65:       action "run"
+I, [2015-03-02T07:04:10.529447 #27620]  INFO -- default-centos65:       retries 0
+I, [2015-03-02T07:04:10.529447 #27620]  INFO -- default-centos65:       retry_delay 2
+I, [2015-03-02T07:04:10.529447 #27620]  INFO -- default-centos65:       default_guard_interpreter :execute
+I, [2015-03-02T07:04:10.529447 #27620]  INFO -- default-centos65:       command "yum update"
+I, [2015-03-02T07:04:10.529947 #27620]  INFO -- default-centos65:       backup 5
+I, [2015-03-02T07:04:10.529947 #27620]  INFO -- default-centos65:       returns 0
+I, [2015-03-02T07:04:10.529947 #27620]  INFO -- default-centos65:       declared_type :execute
+I, [2015-03-02T07:04:10.529947 #27620]  INFO -- default-centos65:       cookbook_name :yum
+I, [2015-03-02T07:04:10.529947 #27620]  INFO -- default-centos65:       recipe_name "default"
+I, [2015-03-02T07:04:10.529947 #27620]  INFO -- default-centos65:     end
+I, [2015-03-02T07:04:10.529947 #27620]  INFO -- default-centos65:     
+I, [2015-03-02T07:04:10.529947 #27620]  INFO -- default-centos65: 
+I, [2015-03-02T07:04:10.529947 #27620]  INFO -- default-centos65: Running handlers:
+I, [2015-03-02T07:04:10.529947 #27620]  INFO -- default-centos65: [2015-03-02T13:04:09+00:00] ERROR: Running exception handlers
+I, [2015-03-02T07:04:10.540949 #27620]  INFO -- default-centos65: Running handlers complete
+I, [2015-03-02T07:04:10.540949 #27620]  INFO -- default-centos65: [2015-03-02T13:04:09+00:00] ERROR: Exception handlers complete
+I, [2015-03-02T07:04:10.541949 #27620]  INFO -- default-centos65: [2015-03-02T13:04:09+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2015-03-02T07:04:10.542449 #27620]  INFO -- default-centos65: Chef Client failed. 0 resources updated in 47.798386516 seconds
+I, [2015-03-02T07:04:10.543450 #27620]  INFO -- default-centos65: [2015-03-02T13:04:09+00:00] ERROR: execute[yum update] (yum::default line 10) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '1'
+I, [2015-03-02T07:04:10.543450 #27620]  INFO -- default-centos65: ---- Begin output of yum update ----
+I, [2015-03-02T07:04:10.543450 #27620]  INFO -- default-centos65: STDOUT: Loaded plugins: fastestmirror
+I, [2015-03-02T07:04:10.543450 #27620]  INFO -- default-centos65: Determining fastest mirrors
+I, [2015-03-02T07:04:10.543450 #27620]  INFO -- default-centos65:  * base: mirror.rackspace.com
+I, [2015-03-02T07:04:10.543450 #27620]  INFO -- default-centos65:  * extras: mirrors.cmich.edu
+I, [2015-03-02T07:04:10.543450 #27620]  INFO -- default-centos65:  * updates: mirror.rackspace.com
+I, [2015-03-02T07:04:10.543450 #27620]  INFO -- default-centos65: Setting up Update Process
+I, [2015-03-02T07:04:10.543450 #27620]  INFO -- default-centos65: Resolving Dependencies
+I, [2015-03-02T07:04:10.543950 #27620]  INFO -- default-centos65: --> Running transaction check
+I, [2015-03-02T07:04:10.543950 #27620]  INFO -- default-centos65: ---> Package audit.x86_64 0:2.2-2.el6 will be updated
+I, [2015-03-02T07:04:10.543950 #27620]  INFO -- default-centos65: ---> Package audit.x86_64 0:2.3.7-5.el6 will be an update
+I, [2015-03-02T07:04:10.543950 #27620]  INFO -- default-centos65: ---> Package audit-libs.x86_64 0:2.2-2.el6 will be updated
+I, [2015-03-02T07:04:10.543950 #27620]  INFO -- default-centos65: ---> Package audit-libs.x86_64 0:2.3.7-5.el6 will be an update
+I, [2015-03-02T07:04:10.543950 #27620]  INFO -- default-centos65: ---> Package authconfig.x86_64 0:6.1.12-13.el6 will be updated
+I, [2015-03-02T07:04:10.543950 #27620]  INFO -- default-centos65: ---> Package authconfig.x86_64 0:6.1.12-19.el6 will be an update
+I, [2015-03-02T07:04:10.543950 #27620]  INFO -- default-centos65: ---> Package bash.x86_64 0:4.1.2-15.el6_4 will be updated
+I, [2015-03-02T07:04:10.543950 #27620]  INFO -- default-centos65: ---> Package bash.x86_64 0:4.1.2-29.el6 will be an update
+I, [2015-03-02T07:04:10.543950 #27620]  INFO -- default-centos65: ---> Package binutils.x86_64 0:2.20.51.0.2-5.36.el6 will be updated
+I, [2015-03-02T07:04:10.543950 #27620]  INFO -- default-centos65: ---> Package binutils.x86_64 0:2.20.51.0.2-5.42.el6 will be an update
+I, [2015-03-02T07:04:10.544450 #27620]  INFO -- default-centos65: ---> Package ca-certificates.noarch 0:2013.1.94-65.0.el6 will be updated
+I, [2015-03-02T07:04:10.544450 #27620]  INFO -- default-centos65: ---> Package ca-certificates.noarch 0:2014.1.98-65.1.el6 will be an update
+I, [2015-03-02T07:04:10.544450 #27620]  INFO -- default-centos65: ---> Package centos-release.x86_64 0:6-5.el6.centos.11.1 will be updated
+I, [2015-03-02T07:04:10.544450 #27620]  INFO -- default-centos65: ---> Package centos-release.x86_64 0:6-6.el6.centos.12.2 will be an update
+I, [2015-03-02T07:04:10.544450 #27620]  INFO -- default-centos65: ---> Package coreutils.x86_64 0:8.4-31.el6 will be updated
+I, [2015-03-02T07:04:10.544450 #27620]  INFO -- default-centos65: ---> Package coreutils.x86_64 0:8.4-37.el6 will be an update
+I, [2015-03-02T07:04:10.544450 #27620]  INFO -- default-centos65: ---> Package coreutils-libs.x86_64 0:8.4-31.el6 will be updated
+I, [2015-03-02T07:04:10.544450 #27620]  INFO -- default-centos65: ---> Package coreutils-libs.x86_64 0:8.4-37.el6 will be an update
+I, [2015-03-02T07:04:10.544450 #27620]  INFO -- default-centos65: ---> Package cpio.x86_64 0:2.10-11.el6_3 will be updated
+I, [2015-03-02T07:04:10.544450 #27620]  INFO -- default-centos65: ---> Package cpio.x86_64 0:2.10-12.el6_5 will be an update
+I, [2015-03-02T07:04:10.544950 #27620]  INFO -- default-centos65: ---> Package curl.x86_64 0:7.19.7-37.el6_4 will be updated
+I, [2015-03-02T07:04:10.544950 #27620]  INFO -- default-centos65: ---> Package curl.x86_64 0:7.19.7-40.el6_6.4 will be an update
+I, [2015-03-02T07:04:10.544950 #27620]  INFO -- default-centos65: ---> Package cyrus-sasl.x86_64 0:2.1.23-13.el6_3.1 will be updated
+I, [2015-03-02T07:04:10.544950 #27620]  INFO -- default-centos65: ---> Package cyrus-sasl.x86_64 0:2.1.23-15.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.544950 #27620]  INFO -- default-centos65: ---> Package cyrus-sasl-lib.x86_64 0:2.1.23-13.el6_3.1 will be updated
+I, [2015-03-02T07:04:10.544950 #27620]  INFO -- default-centos65: ---> Package cyrus-sasl-lib.x86_64 0:2.1.23-15.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.544950 #27620]  INFO -- default-centos65: ---> Package device-mapper.x86_64 0:1.02.79-8.el6 will be updated
+I, [2015-03-02T07:04:10.544950 #27620]  INFO -- default-centos65: ---> Package device-mapper.x86_64 0:1.02.90-2.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.544950 #27620]  INFO -- default-centos65: ---> Package device-mapper-event.x86_64 0:1.02.79-8.el6 will be updated
+I, [2015-03-02T07:04:10.544950 #27620]  INFO -- default-centos65: ---> Package device-mapper-event.x86_64 0:1.02.90-2.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.545450 #27620]  INFO -- default-centos65: ---> Package device-mapper-event-libs.x86_64 0:1.02.79-8.el6 will be updated
+I, [2015-03-02T07:04:10.545450 #27620]  INFO -- default-centos65: ---> Package device-mapper-event-libs.x86_64 0:1.02.90-2.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.545450 #27620]  INFO -- default-centos65: ---> Package device-mapper-libs.x86_64 0:1.02.79-8.el6 will be updated
+I, [2015-03-02T07:04:10.545450 #27620]  INFO -- default-centos65: ---> Package device-mapper-libs.x86_64 0:1.02.90-2.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.545450 #27620]  INFO -- default-centos65: ---> Package device-mapper-persistent-data.x86_64 0:0.2.8-2.el6 will be updated
+I, [2015-03-02T07:04:10.545450 #27620]  INFO -- default-centos65: ---> Package device-mapper-persistent-data.x86_64 0:0.3.2-1.el6 will be an update
+I, [2015-03-02T07:04:10.545450 #27620]  INFO -- default-centos65: ---> Package dhclient.x86_64 12:4.1.1-38.P1.el6.centos will be updated
+I, [2015-03-02T07:04:10.545450 #27620]  INFO -- default-centos65: ---> Package dhclient.x86_64 12:4.1.1-43.P1.el6.centos.1 will be an update
+I, [2015-03-02T07:04:10.545450 #27620]  INFO -- default-centos65: ---> Package dhcp-common.x86_64 12:4.1.1-38.P1.el6.centos will be updated
+I, [2015-03-02T07:04:10.545450 #27620]  INFO -- default-centos65: ---> Package dhcp-common.x86_64 12:4.1.1-43.P1.el6.centos.1 will be an update
+I, [2015-03-02T07:04:10.545450 #27620]  INFO -- default-centos65: ---> Package dracut.noarch 0:004-335.el6 will be updated
+I, [2015-03-02T07:04:10.545950 #27620]  INFO -- default-centos65: ---> Package dracut.noarch 0:004-356.el6 will be an update
+I, [2015-03-02T07:04:10.545950 #27620]  INFO -- default-centos65: ---> Package dracut-kernel.noarch 0:004-335.el6 will be updated
+I, [2015-03-02T07:04:10.545950 #27620]  INFO -- default-centos65: ---> Package dracut-kernel.noarch 0:004-356.el6 will be an update
+I, [2015-03-02T07:04:10.545950 #27620]  INFO -- default-centos65: ---> Package e2fsprogs.x86_64 0:1.41.12-18.el6 will be updated
+I, [2015-03-02T07:04:10.545950 #27620]  INFO -- default-centos65: ---> Package e2fsprogs.x86_64 0:1.41.12-21.el6 will be an update
+I, [2015-03-02T07:04:10.545950 #27620]  INFO -- default-centos65: ---> Package e2fsprogs-libs.x86_64 0:1.41.12-18.el6 will be updated
+I, [2015-03-02T07:04:10.545950 #27620]  INFO -- default-centos65: ---> Package e2fsprogs-libs.x86_64 0:1.41.12-21.el6 will be an update
+I, [2015-03-02T07:04:10.545950 #27620]  INFO -- default-centos65: ---> Package efibootmgr.x86_64 0:0.5.4-11.el6 will be updated
+I, [2015-03-02T07:04:10.545950 #27620]  INFO -- default-centos65: ---> Package efibootmgr.x86_64 0:0.5.4-12.el6 will be an update
+I, [2015-03-02T07:04:10.545950 #27620]  INFO -- default-centos65: ---> Package elfutils-libelf.x86_64 0:0.152-1.el6 will be updated
+I, [2015-03-02T07:04:10.546450 #27620]  INFO -- default-centos65: ---> Package elfutils-libelf.x86_64 0:0.158-3.2.el6 will be an update
+I, [2015-03-02T07:04:10.546450 #27620]  INFO -- default-centos65: ---> Package ethtool.x86_64 2:3.5-1.el6 will be updated
+I, [2015-03-02T07:04:10.570455 #27620]  INFO -- default-centos65: ge ethtool.x86_64 2:3.5-5.el6 will be an update
+I, [2015-03-02T07:04:10.570955 #27620]  INFO -- default-centos65: ---> Package file.x86_64 0:5.04-15.el6 will be updated
+I, [2015-03-02T07:04:10.570955 #27620]  INFO -- default-centos65: ---> Package file.x86_64 0:5.04-21.el6 will be an update
+I, [2015-03-02T07:04:10.570955 #27620]  INFO -- default-centos65: ---> Package file-libs.x86_64 0:5.04-15.el6 will be updated
+I, [2015-03-02T07:04:10.570955 #27620]  INFO -- default-centos65: ---> Package file-libs.x86_64 0:5.04-21.el6 will be an update
+I, [2015-03-02T07:04:10.570955 #27620]  INFO -- default-centos65: ---> Package glib2.x86_64 0:2.26.1-3.el6 will be updated
+I, [2015-03-02T07:04:10.570955 #27620]  INFO -- default-centos65: ---> Package glib2.x86_64 0:2.28.8-4.el6 will be an update
+I, [2015-03-02T07:04:10.570955 #27620]  INFO -- default-centos65: ---> Package glibc.x86_64 0:2.12-1.132.el6 will be updated
+I, [2015-03-02T07:04:10.570955 #27620]  INFO -- default-centos65: ---> Package glibc.x86_64 0:2.12-1.149.el6_6.5 will be an update
+I, [2015-03-02T07:04:10.570955 #27620]  INFO -- default-centos65: ---> Package glibc-common.x86_64 0:2.12-1.132.el6 will be updated
+I, [2015-03-02T07:04:10.570955 #27620]  INFO -- default-centos65: ---> Package glibc-common.x86_64 0:2.12-1.149.el6_6.5 will be an update
+I, [2015-03-02T07:04:10.571455 #27620]  INFO -- default-centos65: ---> Package gnupg2.x86_64 0:2.0.14-6.el6_4 will be updated
+I, [2015-03-02T07:04:10.571455 #27620]  INFO -- default-centos65: ---> Package gnupg2.x86_64 0:2.0.14-8.el6 will be an update
+I, [2015-03-02T07:04:10.571455 #27620]  INFO -- default-centos65: ---> Package grep.x86_64 0:2.6.3-4.el6 will be updated
+I, [2015-03-02T07:04:10.571455 #27620]  INFO -- default-centos65: ---> Package grep.x86_64 0:2.6.3-6.el6 will be an update
+I, [2015-03-02T07:04:10.571455 #27620]  INFO -- default-centos65: ---> Package grub.x86_64 1:0.97-83.el6 will be updated
+I, [2015-03-02T07:04:10.571455 #27620]  INFO -- default-centos65: ---> Package grub.x86_64 1:0.97-93.el6 will be an update
+I, [2015-03-02T07:04:10.571455 #27620]  INFO -- default-centos65: ---> Package grubby.x86_64 0:7.0.15-5.el6 will be updated
+I, [2015-03-02T07:04:10.571455 #27620]  INFO -- default-centos65: ---> Package grubby.x86_64 0:7.0.15-7.el6 will be an update
+I, [2015-03-02T07:04:10.571455 #27620]  INFO -- default-centos65: ---> Package gzip.x86_64 0:1.3.12-19.el6_4 will be updated
+I, [2015-03-02T07:04:10.571455 #27620]  INFO -- default-centos65: ---> Package gzip.x86_64 0:1.3.12-22.el6 will be an update
+I, [2015-03-02T07:04:10.571955 #27620]  INFO -- default-centos65: ---> Package hwdata.noarch 0:0.233-9.1.el6 will be updated
+I, [2015-03-02T07:04:10.577456 #27620]  INFO -- default-centos65: ---> Package hwdata.noarch 0:0.233-11.1.el6 will be an update
+I, [2015-03-02T07:04:10.577456 #27620]  INFO -- default-centos65: ---> Package initscripts.x86_64 0:9.03.40-2.el6.centos will be updated
+I, [2015-03-02T07:04:10.577456 #27620]  INFO -- default-centos65: ---> Package initscripts.x86_64 0:9.03.46-1.el6.centos.1 will be an update
+I, [2015-03-02T07:04:10.577456 #27620]  INFO -- default-centos65: ---> Package iproute.x86_64 0:2.6.32-31.el6 will be updated
+I, [2015-03-02T07:04:10.577456 #27620]  INFO -- default-centos65: ---> Package iproute.x86_64 0:2.6.32-33.el6_6 will be an update
+I, [2015-03-02T07:04:10.577456 #27620]  INFO -- default-centos65: ---> Package iptables.x86_64 0:1.4.7-11.el6 will be updated
+I, [2015-03-02T07:04:10.577956 #27620]  INFO -- default-centos65: ---> Package iptables.x86_64 0:1.4.7-14.el6 will be an update
+I, [2015-03-02T07:04:10.577956 #27620]  INFO -- default-centos65: ---> Package iptables-ipv6.x86_64 0:1.4.7-11.el6 will be updated
+I, [2015-03-02T07:04:10.577956 #27620]  INFO -- default-centos65: ---> Package iptables-ipv6.x86_64 0:1.4.7-14.el6 will be an update
+I, [2015-03-02T07:04:10.577956 #27620]  INFO -- default-centos65: ---> Package kernel.x86_64 0:2.6.32-504.8.1.el6 will be installed
+I, [2015-03-02T07:04:10.577956 #27620]  INFO -- default-centos65: ---> Package kernel-firmware.noarch 0:2.6.32-431.el6 will be updated
+I, [2015-03-02T07:04:10.577956 #27620]  INFO -- default-centos65: ---> Package kernel-firmware.noarch 0:2.6.32-504.8.1.el6 will be an update
+I, [2015-03-02T07:04:10.577956 #27620]  INFO -- default-centos65: ---> Package keyutils.x86_64 0:1.4-4.el6 will be updated
+I, [2015-03-02T07:04:10.577956 #27620]  INFO -- default-centos65: ---> Package keyutils.x86_64 0:1.4-5.el6 will be an update
+I, [2015-03-02T07:04:10.577956 #27620]  INFO -- default-centos65: ---> Package keyutils-libs.x86_64 0:1.4-4.el6 will be updated
+I, [2015-03-02T07:04:10.578457 #27620]  INFO -- default-centos65: ---> Package keyutils-libs.x86_64 0:1.4-5.el6 will be an update
+I, [2015-03-02T07:04:10.578457 #27620]  INFO -- default-centos65: ---> Package krb5-libs.x86_64 0:1.10.3-10.el6_4.6 will be updated
+I, [2015-03-02T07:04:10.578457 #27620]  INFO -- default-centos65: ---> Package krb5-libs.x86_64 0:1.10.3-33.el6 will be an update
+I, [2015-03-02T07:04:10.578457 #27620]  INFO -- default-centos65: ---> Package less.x86_64 0:436-10.el6 will be updated
+I, [2015-03-02T07:04:10.578457 #27620]  INFO -- default-centos65: ---> Package less.x86_64 0:436-13.el6 will be an update
+I, [2015-03-02T07:04:10.578457 #27620]  INFO -- default-centos65: ---> Package libblkid.x86_64 0:2.17.2-12.14.el6 will be updated
+I, [2015-03-02T07:04:10.578457 #27620]  INFO -- default-centos65: ---> Package libblkid.x86_64 0:2.17.2-12.18.el6 will be an update
+I, [2015-03-02T07:04:10.578457 #27620]  INFO -- default-centos65: ---> Package libcom_err.x86_64 0:1.41.12-18.el6 will be updated
+I, [2015-03-02T07:04:10.578457 #27620]  INFO -- default-centos65: ---> Package libcom_err.x86_64 0:1.41.12-21.el6 will be an update
+I, [2015-03-02T07:04:10.595460 #27620]  INFO -- default-centos65: 
+I, [2015-03-02T07:04:10.595460 #27620]  INFO -- default-centos65: ---> Package libcurl.x86_64 0:7.19.7-40.el6_6.4 will be an update
+I, [2015-03-02T07:04:10.595460 #27620]  INFO -- default-centos65: ---> Package libdrm.x86_64 0:2.4.45-2.el6 will be updated
+I, [2015-03-02T07:04:10.595460 #27620]  INFO -- default-centos65: ---> Package libdrm.x86_64 0:2.4.52-4.el6 will be an update
+I, [2015-03-02T07:04:10.595460 #27620]  INFO -- default-centos65: ---> Package libgcc.x86_64 0:4.4.7-4.el6 will be updated
+I, [2015-03-02T07:04:10.595460 #27620]  INFO -- default-centos65: ---> Package libgcc.x86_64 0:4.4.7-11.el6 will be an update
+I, [2015-03-02T07:04:10.595960 #27620]  INFO -- default-centos65: ---> Package libgomp.x86_64 0:4.4.7-4.el6 will be updated
+I, [2015-03-02T07:04:10.595960 #27620]  INFO -- default-centos65: ---> Package libgomp.x86_64 0:4.4.7-11.el6 will be an update
+I, [2015-03-02T07:04:10.595960 #27620]  INFO -- default-centos65: ---> Package libpciaccess.x86_64 0:0.13.1-2.el6 will be updated
+I, [2015-03-02T07:04:10.595960 #27620]  INFO -- default-centos65: ---> Package libpciaccess.x86_64 0:0.13.3-0.1.el6 will be an update
+I, [2015-03-02T07:04:10.595960 #27620]  INFO -- default-centos65: ---> Package libselinux.x86_64 0:2.0.94-5.3.el6_4.1 will be updated
+I, [2015-03-02T07:04:10.595960 #27620]  INFO -- default-centos65: ---> Package libselinux.x86_64 0:2.0.94-5.8.el6 will be an update
+I, [2015-03-02T07:04:10.595960 #27620]  INFO -- default-centos65: ---> Package libselinux-utils.x86_64 0:2.0.94-5.3.el6_4.1 will be updated
+I, [2015-03-02T07:04:10.595960 #27620]  INFO -- default-centos65: ---> Package libselinux-utils.x86_64 0:2.0.94-5.8.el6 will be an update
+I, [2015-03-02T07:04:10.595960 #27620]  INFO -- default-centos65: ---> Package libss.x86_64 0:1.41.12-18.el6 will be updated
+I, [2015-03-02T07:04:10.595960 #27620]  INFO -- default-centos65: ---> Package libss.x86_64 0:1.41.12-21.el6 will be an update
+I, [2015-03-02T07:04:10.596460 #27620]  INFO -- default-centos65: ---> Package libssh2.x86_64 0:1.4.2-1.el6 will be updated
+I, [2015-03-02T07:04:10.596460 #27620]  INFO -- default-centos65: ---> Package libssh2.x86_64 0:1.4.2-1.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.596460 #27620]  INFO -- default-centos65: ---> Package libstdc++.x86_64 0:4.4.7-4.el6 will be updated
+I, [2015-03-02T07:04:10.596460 #27620]  INFO -- default-centos65: ---> Package libstdc++.x86_64 0:4.4.7-11.el6 will be an update
+I, [2015-03-02T07:04:10.596460 #27620]  INFO -- default-centos65: ---> Package libtasn1.x86_64 0:2.3-3.el6_2.1 will be updated
+I, [2015-03-02T07:04:10.596460 #27620]  INFO -- default-centos65: ---> Package libtasn1.x86_64 0:2.3-6.el6_5 will be an update
+I, [2015-03-02T07:04:10.596460 #27620]  INFO -- default-centos65: ---> Package libtirpc.x86_64 0:0.2.1-6.el6_4 will be updated
+I, [2015-03-02T07:04:10.596460 #27620]  INFO -- default-centos65: ---> Package libtirpc.x86_64 0:0.2.1-10.el6 will be an update
+I, [2015-03-02T07:04:10.596460 #27620]  INFO -- default-centos65: ---> Package libudev.x86_64 0:147-2.51.el6 will be updated
+I, [2015-03-02T07:04:10.596460 #27620]  INFO -- default-centos65: ---> Package libudev.x86_64 0:147-2.57.el6 will be an update
+I, [2015-03-02T07:04:10.596960 #27620]  INFO -- default-centos65: ---> Package libuuid.x86_64 0:2.17.2-12.14.el6 will be updated
+I, [2015-03-02T07:04:10.596960 #27620]  INFO -- default-centos65: ---> Package libuuid.x86_64 0:2.17.2-12.18.el6 will be an update
+I, [2015-03-02T07:04:10.596960 #27620]  INFO -- default-centos65: ---> Package libxml2.x86_64 0:2.7.6-14.el6 will be updated
+I, [2015-03-02T07:04:10.596960 #27620]  INFO -- default-centos65: ---> Package libxml2.x86_64 0:2.7.6-17.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.596960 #27620]  INFO -- default-centos65: ---> Package lvm2.x86_64 0:2.02.100-8.el6 will be updated
+I, [2015-03-02T07:04:10.596960 #27620]  INFO -- default-centos65: ---> Package lvm2.x86_64 0:2.02.111-2.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.596960 #27620]  INFO -- default-centos65: ---> Package lvm2-libs.x86_64 0:2.02.100-8.el6 will be updated
+I, [2015-03-02T07:04:10.596960 #27620]  INFO -- default-centos65: ---> Package lvm2-libs.x86_64 0:2.02.111-2.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.596960 #27620]  INFO -- default-centos65: ---> Package module-init-tools.x86_64 0:3.9-21.el6_4 will be updated
+I, [2015-03-02T07:04:10.596960 #27620]  INFO -- default-centos65: ---> Package module-init-tools.x86_64 0:3.9-24.el6 will be an update
+I, [2015-03-02T07:04:10.596960 #27620]  INFO -- default-centos65: ---> Package mysql-libs.x86_64 0:5.1.71-1.el6 will be updated
+I, [2015-03-02T07:04:10.597460 #27620]  INFO -- default-centos65: ---> Package mysql-libs.x86_64 0:5.1.73-3.el6_5 will be an update
+I, [2015-03-02T07:04:10.597460 #27620]  INFO -- default-centos65: ---> Package nfs-utils.x86_64 1:1.2.3-39.el6 will be updated
+I, [2015-03-02T07:04:10.597460 #27620]  INFO -- default-centos65: ---> Package nfs-utils.x86_64 1:1.2.3-54.el6 will be an update
+I, [2015-03-02T07:04:10.597460 #27620]  INFO -- default-centos65: ---> Package nfs-utils-lib.x86_64 0:1.1.5-6.el6 will be updated
+I, [2015-03-02T07:04:10.597460 #27620]  INFO -- default-centos65: ---> Package nfs-utils-lib.x86_64 0:1.1.5-9.el6 will be an update
+I, [2015-03-02T07:04:10.597460 #27620]  INFO -- default-centos65: ---> Package nspr.x86_64 0:4.10.0-1.el6 will be updated
+I, [2015-03-02T07:04:10.597460 #27620]  INFO -- default-centos65: ---> Package nspr.x86_64 0:4.10.6-1.el6_5 will be an update
+I, [2015-03-02T07:04:10.597460 #27620]  INFO -- default-centos65: ---> Package nss.x86_64 0:3.15.1-15.el6 will be updated
+I, [2015-03-02T07:04:10.597460 #27620]  INFO -- default-centos65: ---> Package nss.x86_64 0:3.16.2.3-3.el6_6 will be an update
+I, [2015-03-02T07:04:10.597960 #27620]  INFO -- default-centos65: ---> Package nss-softokn.x86_64 0:3.14.3-9.el6 will be updated
+I, [2015-03-02T07:04:10.597960 #27620]  INFO -- default-centos65: ---> Package nss-softokn.x86_64 0:3.14.3-22.el6_6 will be an update
+I, [2015-03-02T07:04:10.597960 #27620]  INFO -- default-centos65: ---> Package nss-softokn-freebl.x86_64 0:3.14.3-9.el6 will be updated
+I, [2015-03-02T07:04:10.597960 #27620]  INFO -- default-centos65: ---> Package nss-softokn-freebl.x86_64 0:3.14.3-22.el6_6 will be an update
+I, [2015-03-02T07:04:10.597960 #27620]  INFO -- default-centos65: ---> Package nss-sysinit.x86_64 0:3.15.1-15.el6 will be updated
+I, [2015-03-02T07:04:10.597960 #27620]  INFO -- default-centos65: ---> Package nss-sysinit.x86_64 0:3.16.2.3-3.el6_6 will be an update
+I, [2015-03-02T07:04:10.597960 #27620]  INFO -- default-centos65: ---> Package nss-tools.x86_64 0:3.15.1-15.el6 will be updated
+I, [2015-03-02T07:04:10.597960 #27620]  INFO -- default-centos65: ---> Package nss-tools.x86_64 0:3.16.2.3-3.el6_6 will be an update
+I, [2015-03-02T07:04:10.597960 #27620]  INFO -- default-centos65: ---> Package nss-util.x86_64 0:3.15.1-3.el6 will be updated
+I, [2015-03-02T07:04:10.597960 #27620]  INFO -- default-centos65: ---> Package nss-util.x86_64 0:3.16.2.3-2.el6_6 will be an update
+I, [2015-03-02T07:04:10.598461 #27620]  INFO -- default-centos65: ---> Package openldap.x86_64 0:2.4.23-32.el6_4.1 will be updated
+I, [2015-03-02T07:04:10.598461 #27620]  INFO -- default-centos65: ---> Package openldap.x86_64 0:2.4.39-8.el6 will be an update
+I, [2015-03-02T07:04:10.598461 #27620]  INFO -- default-centos65: ---> Package openssh.x86_64 0:5.3p1-94.el6 will be updated
+I, [2015-03-02T07:04:10.598461 #27620]  INFO -- default-centos65: ---> Package openssh.x86_64 0:5.3p1-104.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.598461 #27620]  INFO -- default-centos65: ---> Package openssh-clients.x86_64 0:5.3p1-94.el6 will be updated
+I, [2015-03-02T07:04:10.598461 #27620]  INFO -- default-centos65: ---> Package openssh-clients.x86_64 0:5.3p1-104.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.598461 #27620]  INFO -- default-centos65: ---> Package openssh-server.x86_64 0:5.3p1-94.el6 will be updated
+I, [2015-03-02T07:04:10.598461 #27620]  INFO -- default-centos65: ---> Package openssh-server.x86_64 0:5.3p1-104.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.621465 #27620]  INFO -- default-centos65: openssl.x86_64 0:1.0.1e-15.el6 will be updated
+I, [2015-03-02T07:04:10.621465 #27620]  INFO -- default-centos65: ---> Package openssl.x86_64 0:1.0.1e-30.el6_6.5 will be an update
+I, [2015-03-02T07:04:10.621965 #27620]  INFO -- default-centos65: ---> Package p11-kit.x86_64 0:0.18.5-2.el6 will be updated
+I, [2015-03-02T07:04:10.621965 #27620]  INFO -- default-centos65: ---> Package p11-kit.x86_64 0:0.18.5-2.el6_5.2 will be an update
+I, [2015-03-02T07:04:10.621965 #27620]  INFO -- default-centos65: ---> Package p11-kit-trust.x86_64 0:0.18.5-2.el6 will be updated
+I, [2015-03-02T07:04:10.621965 #27620]  INFO -- default-centos65: ---> Package p11-kit-trust.x86_64 0:0.18.5-2.el6_5.2 will be an update
+I, [2015-03-02T07:04:10.621965 #27620]  INFO -- default-centos65: ---> Package pam.x86_64 0:1.1.1-17.el6 will be updated
+I, [2015-03-02T07:04:10.621965 #27620]  INFO -- default-centos65: ---> Package pam.x86_64 0:1.1.1-20.el6 will be an update
+I, [2015-03-02T07:04:10.621965 #27620]  INFO -- default-centos65: ---> Package pciutils-libs.x86_64 0:3.1.10-2.el6 will be updated
+I, [2015-03-02T07:04:10.621965 #27620]  INFO -- default-centos65: ---> Package pciutils-libs.x86_64 0:3.1.10-4.el6 will be an update
+I, [2015-03-02T07:04:10.621965 #27620]  INFO -- default-centos65: ---> Package plymouth.x86_64 0:0.8.3-27.el6.centos will be updated
+I, [2015-03-02T07:04:10.622465 #27620]  INFO -- default-centos65: ---> Package plymouth.x86_64 0:0.8.3-27.el6.centos.1 will be an update
+I, [2015-03-02T07:04:10.622465 #27620]  INFO -- default-centos65: ---> Package plymouth-core-libs.x86_64 0:0.8.3-27.el6.centos will be updated
+I, [2015-03-02T07:04:10.622465 #27620]  INFO -- default-centos65: ---> Package plymouth-core-libs.x86_64 0:0.8.3-27.el6.centos.1 will be an update
+I, [2015-03-02T07:04:10.622465 #27620]  INFO -- default-centos65: ---> Package plymouth-scripts.x86_64 0:0.8.3-27.el6.centos will be updated
+I, [2015-03-02T07:04:10.622465 #27620]  INFO -- default-centos65: ---> Package plymouth-scripts.x86_64 0:0.8.3-27.el6.centos.1 will be an update
+I, [2015-03-02T07:04:10.622465 #27620]  INFO -- default-centos65: ---> Package policycoreutils.x86_64 0:2.0.83-19.39.el6 will be updated
+I, [2015-03-02T07:04:10.622465 #27620]  INFO -- default-centos65: ---> Package policycoreutils.x86_64 0:2.0.83-19.47.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.622465 #27620]  INFO -- default-centos65: ---> Package postfix.x86_64 2:2.6.6-2.2.el6_1 will be updated
+I, [2015-03-02T07:04:10.622465 #27620]  INFO -- default-centos65: ---> Package postfix.x86_64 2:2.6.6-6.el6_5 will be an update
+I, [2015-03-02T07:04:10.622465 #27620]  INFO -- default-centos65: ---> Package procps.x86_64 0:3.2.8-25.el6 will be updated
+I, [2015-03-02T07:04:10.622465 #27620]  INFO -- default-centos65: ---> Package procps.x86_64 0:3.2.8-30.el6 will be an update
+I, [2015-03-02T07:04:10.622965 #27620]  INFO -- default-centos65: ---> Package psmisc.x86_64 0:22.6-15.el6_0.1 will be updated
+I, [2015-03-02T07:04:10.622965 #27620]  INFO -- default-centos65: ---> Package psmisc.x86_64 0:22.6-19.el6_5 will be an update
+I, [2015-03-02T07:04:10.622965 #27620]  INFO -- default-centos65: ---> Package python.x86_64 0:2.6.6-51.el6 will be updated
+I, [2015-03-02T07:04:10.622965 #27620]  INFO -- default-centos65: ---> Package python.x86_64 0:2.6.6-52.el6 will be an update
+I, [2015-03-02T07:04:10.622965 #27620]  INFO -- default-centos65: ---> Package python-libs.x86_64 0:2.6.6-51.el6 will be updated
+I, [2015-03-02T07:04:10.622965 #27620]  INFO -- default-centos65: ---> Package python-libs.x86_64 0:2.6.6-52.el6 will be an update
+I, [2015-03-02T07:04:10.622965 #27620]  INFO -- default-centos65: ---> Package rpm.x86_64 0:4.8.0-37.el6 will be updated
+I, [2015-03-02T07:04:10.622965 #27620]  INFO -- default-centos65: ---> Package rpm.x86_64 0:4.8.0-38.el6_6 will be an update
+I, [2015-03-02T07:04:10.622965 #27620]  INFO -- default-centos65: ---> Package rpm-libs.x86_64 0:4.8.0-37.el6 will be updated
+I, [2015-03-02T07:04:10.622965 #27620]  INFO -- default-centos65: ---> Package rpm-libs.x86_64 0:4.8.0-38.el6_6 will be an update
+I, [2015-03-02T07:04:10.623466 #27620]  INFO -- default-centos65: ---> Package rpm-python.x86_64 0:4.8.0-37.el6 will be updated
+I, [2015-03-02T07:04:10.623466 #27620]  INFO -- default-centos65: ---> Package rpm-python.x86_64 0:4.8.0-38.el6_6 will be an update
+I, [2015-03-02T07:04:10.628967 #27620]  INFO -- default-centos65: ---> Package rsyslog.x86_64 0:5.8.10-8.el6 will be updated
+I, [2015-03-02T07:04:10.628967 #27620]  INFO -- default-centos65: ---> Package rsyslog.x86_64 0:5.8.10-10.el6_6 will be an update
+I, [2015-03-02T07:04:10.628967 #27620]  INFO -- default-centos65: ---> Package selinux-policy.noarch 0:3.7.19-231.el6 will be updated
+I, [2015-03-02T07:04:10.628967 #27620]  INFO -- default-centos65: ---> Package selinux-policy.noarch 0:3.7.19-260.el6_6.2 will be an update
+I, [2015-03-02T07:04:10.629467 #27620]  INFO -- default-centos65: ---> Package selinux-policy-targeted.noarch 0:3.7.19-231.el6 will be updated
+I, [2015-03-02T07:04:10.629467 #27620]  INFO -- default-centos65: ---> Package selinux-policy-targeted.noarch 0:3.7.19-260.el6_6.2 will be an update
+I, [2015-03-02T07:04:10.629467 #27620]  INFO -- default-centos65: ---> Package shadow-utils.x86_64 2:4.1.4.2-13.el6 will be updated
+I, [2015-03-02T07:04:10.629467 #27620]  INFO -- default-centos65: ---> Package shadow-utils.x86_64 2:4.1.4.2-19.el6 will be an update
+I, [2015-03-02T07:04:10.629467 #27620]  INFO -- default-centos65: ---> Package shared-mime-info.x86_64 0:0.70-4.el6 will be updated
+I, [2015-03-02T07:04:10.629467 #27620]  INFO -- default-centos65: ---> Package shared-mime-info.x86_64 0:0.70-6.el6 will be an update
+I, [2015-03-02T07:04:10.629467 #27620]  INFO -- default-centos65: ---> Package sudo.x86_64 0:1.8.6p3-12.el6 will be updated
+I, [2015-03-02T07:04:10.629467 #27620]  INFO -- default-centos65: ---> Package sudo.x86_64 0:1.8.6p3-15.el6 will be an update
+I, [2015-03-02T07:04:10.645470 #27620]  INFO -- default-centos65: 
+I, [2015-03-02T07:04:10.645970 #27620]  INFO -- default-centos65: ---> Package system-config-firewall-base.noarch 0:1.2.27-7.2.el6_6 will be an update
+I, [2015-03-02T07:04:10.645970 #27620]  INFO -- default-centos65: ---> Package tzdata.noarch 0:2013g-1.el6 will be updated
+I, [2015-03-02T07:04:10.645970 #27620]  INFO -- default-centos65: ---> Package tzdata.noarch 0:2015a-1.el6 will be an update
+I, [2015-03-02T07:04:10.645970 #27620]  INFO -- default-centos65: ---> Package udev.x86_64 0:147-2.51.el6 will be updated
+I, [2015-03-02T07:04:10.645970 #27620]  INFO -- default-centos65: ---> Package udev.x86_64 0:147-2.57.el6 will be an update
+I, [2015-03-02T07:04:10.645970 #27620]  INFO -- default-centos65: ---> Package upstart.x86_64 0:0.6.5-12.el6_4.1 will be updated
+I, [2015-03-02T07:04:10.645970 #27620]  INFO -- default-centos65: ---> Package upstart.x86_64 0:0.6.5-13.el6_5.3 will be an update
+I, [2015-03-02T07:04:10.645970 #27620]  INFO -- default-centos65: ---> Package util-linux-ng.x86_64 0:2.17.2-12.14.el6 will be updated
+I, [2015-03-02T07:04:10.645970 #27620]  INFO -- default-centos65: ---> Package util-linux-ng.x86_64 0:2.17.2-12.18.el6 will be an update
+I, [2015-03-02T07:04:10.645970 #27620]  INFO -- default-centos65: ---> Package wget.x86_64 0:1.12-1.8.el6 will be updated
+I, [2015-03-02T07:04:10.646470 #27620]  INFO -- default-centos65: ---> Package wget.x86_64 0:1.12-5.el6_6.1 will be an update
+I, [2015-03-02T07:04:10.646470 #27620]  INFO -- default-centos65: ---> Package xz-libs.x86_64 0:4.999.9-0.3.beta.20091007git.el6 will be updated
+I, [2015-03-02T07:04:10.646470 #27620]  INFO -- default-centos65: ---> Package xz-libs.x86_64 0:4.999.9-0.5.beta.20091007git.el6 will be an update
+I, [2015-03-02T07:04:10.646470 #27620]  INFO -- default-centos65: ---> Package yum.noarch 0:3.2.29-40.el6.centos will be updated
+I, [2015-03-02T07:04:10.646470 #27620]  INFO -- default-centos65: ---> Package yum.noarch 0:3.2.29-60.el6.centos will be an update
+I, [2015-03-02T07:04:10.646470 #27620]  INFO -- default-centos65: ---> Package yum-plugin-fastestmirror.noarch 0:1.1.30-14.el6 will be updated
+I, [2015-03-02T07:04:10.646470 #27620]  INFO -- default-centos65: ---> Package yum-plugin-fastestmirror.noarch 0:1.1.30-30.el6 will be an update
+I, [2015-03-02T07:04:10.646470 #27620]  INFO -- default-centos65: --> Finished Dependency Resolution
+I, [2015-03-02T07:04:10.646470 #27620]  INFO -- default-centos65: 
+I, [2015-03-02T07:04:10.646470 #27620]  INFO -- default-centos65: Dependencies Resolved
+I, [2015-03-02T07:04:10.646470 #27620]  INFO -- default-centos65: 
+I, [2015-03-02T07:04:10.646970 #27620]  INFO -- default-centos65: ================================================================================
+I, [2015-03-02T07:04:10.646970 #27620]  INFO -- default-centos65:  Package                       Arch   Version                     Repository
+I, [2015-03-02T07:04:10.646970 #27620]  INFO -- default-centos65:                                                                     Size
+I, [2015-03-02T07:04:10.646970 #27620]  INFO -- default-centos65: ================================================================================
+I, [2015-03-02T07:04:10.646970 #27620]  INFO -- default-centos65: Installing:
+I, [2015-03-02T07:04:10.646970 #27620]  INFO -- default-centos65:  kernel                        x86_64 2.6.32-504.8.1.el6          updates  29 M
+I, [2015-03-02T07:04:10.646970 #27620]  INFO -- default-centos65: Updating:
+I, [2015-03-02T07:04:10.646970 #27620]  INFO -- default-centos65:  audit                         x86_64 2.3.7-5.el6                 base    208 k
+I, [2015-03-02T07:04:10.646970 #27620]  INFO -- default-centos65:  audit-libs                    x86_64 2.3.7-5.el6                 base     71 k
+I, [2015-03-02T07:04:10.647470 #27620]  INFO -- default-centos65:  authconfig                    x86_64 6.1.12-19.el6               base    377 k
+I, [2015-03-02T07:04:10.647470 #27620]  INFO -- default-centos65:  bash                          x86_64 4.1.2-29.el6                base    907 k
+I, [2015-03-02T07:04:10.647470 #27620]  INFO -- default-centos65:  binutils                      x86_64 2.20.51.0.2-5.42.el6        base    2.8 M
+I, [2015-03-02T07:04:10.647470 #27620]  INFO -- default-centos65:  ca-certificates               noarch 2014.1.98-65.1.el6          base    1.1 M
+I, [2015-03-02T07:04:10.647470 #27620]  INFO -- default-centos65:  centos-release                x86_64 6-6.el6.centos.12.2         base     21 k
+I, [2015-03-02T07:04:10.647470 #27620]  INFO -- default-centos65:  coreutils                     x86_64 8.4-37.el6                  base    3.0 M
+I, [2015-03-02T07:04:10.647470 #27620]  INFO -- default-centos65:  coreutils-libs                x86_64 8.4-37.el6                  base     50 k
+I, [2015-03-02T07:04:10.647470 #27620]  INFO -- default-centos65:  cpio                          x86_64 2.10-12.el6_5               base    192 k
+I, [2015-03-02T07:04:10.647470 #27620]  INFO -- default-centos65:  curl                          x86_64 7.19.7-40.el6_6.4           updates 194 k
+I, [2015-03-02T07:04:10.647470 #27620]  INFO -- default-centos65:  cyrus-sasl                    x86_64 2.1.23-15.el6_6.1           updates  78 k
+I, [2015-03-02T07:04:10.647970 #27620]  INFO -- default-centos65:  cyrus-sasl-lib                x86_64 2.1.23-15.el6_6.1           updates 136 k
+I, [2015-03-02T07:04:10.647970 #27620]  INFO -- default-centos65:  device-mapper                 x86_64 1.02.90-2.el6_6.1           updates 173 k
+I, [2015-03-02T07:04:10.647970 #27620]  INFO -- default-centos65:  device-mapper-event           x86_64 1.02.90-2.el6_6.1           updates 122 k
+I, [2015-03-02T07:04:10.647970 #27620]  INFO -- default-centos65:  device-mapper-event-libs      x86_64 1.02.90-2.el6_6.1           updates 116 k
+I, [2015-03-02T07:04:10.647970 #27620]  INFO -- default-centos65:  device-mapper-libs            x86_64 1.02.90-2.el6_6.1           updates 218 k
+I, [2015-03-02T07:04:10.647970 #27620]  INFO -- default-centos65:  device-mapper-persistent-data x86_64 0.3.2-1.el6                 base    2.5 M
+I, [2015-03-02T07:04:10.647970 #27620]  INFO -- default-centos65:  dhclient                      x86_64 12:4.1.1-43.P1.el6.centos.1 updates 318 k
+I, [2015-03-02T07:04:10.647970 #27620]  INFO -- default-centos65:  dhcp-common                   x86_64 12:4.1.1-43.P1.el6.centos.1 updates 143 k
+I, [2015-03-02T07:04:10.647970 #27620]  INFO -- default-centos65:  dracut                        noarch 004-356.el6                 base    123 k
+I, [2015-03-02T07:04:10.648471 #27620]  INFO -- default-centos65:  dracut-kernel                 noarch 004-356.el6                 base     25 k
+I, [2015-03-02T07:04:10.648471 #27620]  INFO -- default-centos65:  e2fsprogs                     x86_64 1.41.12-21.el6              base    553 k
+I, [2015-03-02T07:04:10.648471 #27620]  INFO -- default-centos65:  e2fsprogs-libs                x86_64 1.41.12-21.el6              base    121 k
+I, [2015-03-02T07:04:10.648471 #27620]  INFO -- default-centos65:  efibootmgr                    x86_64 0.5.4-12.el6                base     38 k
+I, [2015-03-02T07:04:10.648471 #27620]  INFO -- default-centos65:  elfutils-libelf               x86_64 0.158-3.2.el6               base    182 k
+I, [2015-03-02T07:04:10.648471 #27620]  INFO -- default-centos65:  ethtool                       x86_64 2:3.5-5.el6                 base    101 k
+I, [2015-03-02T07:04:10.648471 #27620]  INFO -- default-centos65:  file                          x86_64 5.04-21.el6                 base     47 k
+I, [2015-03-02T07:04:10.648471 #27620]  INFO -- default-centos65:  file-libs                     x86_64 5.04-21.el6                 base    313 k
+I, [2015-03-02T07:04:10.648471 #27620]  INFO -- default-centos65:  glib2                         x86_64 2.28.8-4.el6                base    1.7 M
+I, [2015-03-02T07:04:10.672975 #27620]  INFO -- default-centos65:             x86_64 2.12-1.149.el6_6.5          updates 3.8 M
+I, [2015-03-02T07:04:10.672975 #27620]  INFO -- default-centos65:  glibc-common                  x86_64 2.12-1.149.el6_6.5          updates  14 M
+I, [2015-03-02T07:04:10.672975 #27620]  INFO -- default-centos65:  gnupg2                        x86_64 2.0.14-8.el6                base    1.6 M
+I, [2015-03-02T07:04:10.672975 #27620]  INFO -- default-centos65:  grep                          x86_64 2.6.3-6.el6                 base    229 k
+I, [2015-03-02T07:04:10.672975 #27620]  INFO -- default-centos65:  grub                          x86_64 1:0.97-93.el6               base    936 k
+I, [2015-03-02T07:04:10.672975 #27620]  INFO -- default-centos65:  grubby                        x86_64 7.0.15-7.el6                base     43 k
+I, [2015-03-02T07:04:10.672975 #27620]  INFO -- default-centos65:  gzip                          x86_64 1.3.12-22.el6               base    116 k
+I, [2015-03-02T07:04:10.672975 #27620]  INFO -- default-centos65:  hwdata                        noarch 0.233-11.1.el6              base    1.2 M
+I, [2015-03-02T07:04:10.672975 #27620]  INFO -- default-centos65:  initscripts                   x86_64 9.03.46-1.el6.centos.1      updates 943 k
+I, [2015-03-02T07:04:10.673476 #27620]  INFO -- default-centos65:  iproute                       x86_64 2.6.32-33.el6_6             updates 365 k
+I, [2015-03-02T07:04:10.673476 #27620]  INFO -- default-centos65:  iptables                      x86_64 1.4.7-14.el6                base    252 k
+I, [2015-03-02T07:04:10.673476 #27620]  INFO -- default-centos65:  iptables-ipv6                 x86_64 1.4.7-14.el6                base    100 k
+I, [2015-03-02T07:04:10.673476 #27620]  INFO -- default-centos65:  kernel-firmware               noarch 2.6.32-504.8.1.el6          updates  14 M
+I, [2015-03-02T07:04:10.673476 #27620]  INFO -- default-centos65:  keyutils                      x86_64 1.4-5.el6                   base     39 k
+I, [2015-03-02T07:04:10.673476 #27620]  INFO -- default-centos65:  keyutils-libs                 x86_64 1.4-5.el6                   base     20 k
+I, [2015-03-02T07:04:10.673476 #27620]  INFO -- default-centos65:  krb5-libs                     x86_64 1.10.3-33.el6               base    765 k
+I, [2015-03-02T07:04:10.673476 #27620]  INFO -- default-centos65:  less                          x86_64 436-13.el6                  base    108 k
+I, [2015-03-02T07:04:10.673476 #27620]  INFO -- default-centos65:  libblkid                      x86_64 2.17.2-12.18.el6            base    116 k
+I, [2015-03-02T07:04:10.673476 #27620]  INFO -- default-centos65:  libcom_err                    x86_64 1.41.12-21.el6              base     37 k
+I, [2015-03-02T07:04:10.673976 #27620]  INFO -- default-centos65:  libcurl                       x86_64 7.19.7-40.el6_6.4           updates 166 k
+I, [2015-03-02T07:04:10.673976 #27620]  INFO -- default-centos65:  libdrm                        x86_64 2.4.52-4.el6                base    123 k
+I, [2015-03-02T07:04:10.673976 #27620]  INFO -- default-centos65:  libgcc                        x86_64 4.4.7-11.el6                base    102 k
+I, [2015-03-02T07:04:10.673976 #27620]  INFO -- default-centos65:  libgomp                       x86_64 4.4.7-11.el6                base    133 k
+I, [2015-03-02T07:04:10.673976 #27620]  INFO -- default-centos65:  libpciaccess                  x86_64 0.13.3-0.1.el6              base     24 k
+I, [2015-03-02T07:04:10.673976 #27620]  INFO -- default-centos65:  libselinux                    x86_64 2.0.94-5.8.el6              base    108 k
+I, [2015-03-02T07:04:10.673976 #27620]  INFO -- default-centos65:  libselinux-utils              x86_64 2.0.94-5.8.el6              base     82 k
+I, [2015-03-02T07:04:10.673976 #27620]  INFO -- default-centos65:  libss                         x86_64 1.41.12-21.el6              base     41 k
+I, [2015-03-02T07:04:10.673976 #27620]  INFO -- default-centos65:  libssh2                       x86_64 1.4.2-1.el6_6.1             updates 123 k
+I, [2015-03-02T07:04:10.673976 #27620]  INFO -- default-centos65:  libstdc++                     x86_64 4.4.7-11.el6                base    294 k
+I, [2015-03-02T07:04:10.674476 #27620]  INFO -- default-centos65:  libtasn1                      x86_64 2.3-6.el6_5                 base    238 k
+I, [2015-03-02T07:04:10.674476 #27620]  INFO -- default-centos65:  libtirpc                      x86_64 0.2.1-10.el6                base     79 k
+I, [2015-03-02T07:04:10.674476 #27620]  INFO -- default-centos65:  libudev                       x86_64 147-2.57.el6                base     75 k
+I, [2015-03-02T07:04:10.674476 #27620]  INFO -- default-centos65:  libuuid                       x86_64 2.17.2-12.18.el6            base     69 k
+I, [2015-03-02T07:04:10.674476 #27620]  INFO -- default-centos65:  libxml2                       x86_64 2.7.6-17.el6_6.1            updates 801 k
+I, [2015-03-02T07:04:10.674476 #27620]  INFO -- default-centos65:  lvm2                          x86_64 2.02.111-2.el6_6.1          updates 816 k
+I, [2015-03-02T07:04:10.674476 #27620]  INFO -- default-centos65:  lvm2-libs                     x86_64 2.02.111-2.el6_6.1          updates 901 k
+I, [2015-03-02T07:04:10.674476 #27620]  INFO -- default-centos65:  module-init-tools             x86_64 3.9-24.el6                  base    465 k
+I, [2015-03-02T07:04:10.674476 #27620]  INFO -- default-centos65:  mysql-libs                    x86_64 5.1.73-3.el6_5              base    1.2 M
+I, [2015-03-02T07:04:10.674476 #27620]  INFO -- default-centos65:  nfs-utils                     x86_64 1:1.2.3-54.el6              base    326 k
+I, [2015-03-02T07:04:10.690479 #27620]  INFO -- default-centos65: 
+I, [2015-03-02T07:04:10.690979 #27620]  INFO -- default-centos65:  nspr                          x86_64 4.10.6-1.el6_5              base    113 k
+I, [2015-03-02T07:04:10.690979 #27620]  INFO -- default-centos65:  nss                           x86_64 3.16.2.3-3.el6_6            updates 834 k
+I, [2015-03-02T07:04:10.690979 #27620]  INFO -- default-centos65:  nss-softokn                   x86_64 3.14.3-22.el6_6             updates 262 k
+I, [2015-03-02T07:04:10.690979 #27620]  INFO -- default-centos65:  nss-softokn-freebl            x86_64 3.14.3-22.el6_6             updates 167 k
+I, [2015-03-02T07:04:10.690979 #27620]  INFO -- default-centos65:  nss-sysinit                   x86_64 3.16.2.3-3.el6_6            updates  44 k
+I, [2015-03-02T07:04:10.690979 #27620]  INFO -- default-centos65:  nss-tools                     x86_64 3.16.2.3-3.el6_6            updates 427 k
+I, [2015-03-02T07:04:10.697480 #27620]  INFO -- default-centos65:  nss-util                      x86_64 3.16.2.3-2.el6_6            updates  66 k
+I, [2015-03-02T07:04:10.697980 #27620]  INFO -- default-centos65:  openldap                      x86_64 2.4.39-8.el6                base    280 k
+I, [2015-03-02T07:04:10.697980 #27620]  INFO -- default-centos65:  openssh                       x86_64 5.3p1-104.el6_6.1           updates 272 k
+I, [2015-03-02T07:04:10.697980 #27620]  INFO -- default-centos65:  openssh-clients               x86_64 5.3p1-104.el6_6.1           updates 437 k
+I, [2015-03-02T07:04:10.697980 #27620]  INFO -- default-centos65:  openssh-server                x86_64 5.3p1-104.el6_6.1           updates 321 k
+I, [2015-03-02T07:04:10.697980 #27620]  INFO -- default-centos65:  openssl                       x86_64 1.0.1e-30.el6_6.5           updates 1.5 M
+I, [2015-03-02T07:04:10.697980 #27620]  INFO -- default-centos65:  p11-kit                       x86_64 0.18.5-2.el6_5.2            base     94 k
+I, [2015-03-02T07:04:10.697980 #27620]  INFO -- default-centos65:  p11-kit-trust                 x86_64 0.18.5-2.el6_5.2            base     71 k
+I, [2015-03-02T07:04:10.697980 #27620]  INFO -- default-centos65:  pam                           x86_64 1.1.1-20.el6                base    659 k
+I, [2015-03-02T07:04:10.697980 #27620]  INFO -- default-centos65:  pciutils-libs                 x86_64 3.1.10-4.el6                base     34 k
+I, [2015-03-02T07:04:10.698481 #27620]  INFO -- default-centos65:  plymouth                      x86_64 0.8.3-27.el6.centos.1       base     89 k
+I, [2015-03-02T07:04:10.698481 #27620]  INFO -- default-centos65:  plymouth-core-libs            x86_64 0.8.3-27.el6.centos.1       base     88 k
+I, [2015-03-02T07:04:10.698481 #27620]  INFO -- default-centos65:  plymouth-scripts              x86_64 0.8.3-27.el6.centos.1       base     31 k
+I, [2015-03-02T07:04:10.698481 #27620]  INFO -- default-centos65:  policycoreutils               x86_64 2.0.83-19.47.el6_6.1        updates 650 k
+I, [2015-03-02T07:04:10.698481 #27620]  INFO -- default-centos65:  postfix                       x86_64 2:2.6.6-6.el6_5             base    2.0 M
+I, [2015-03-02T07:04:10.698481 #27620]  INFO -- default-centos65:  procps                        x86_64 3.2.8-30.el6                base    214 k
+I, [2015-03-02T07:04:10.698481 #27620]  INFO -- default-centos65:  psmisc                        x86_64 22.6-19.el6_5               base     81 k
+I, [2015-03-02T07:04:10.698481 #27620]  INFO -- default-centos65:  python                        x86_64 2.6.6-52.el6                base     74 k
+I, [2015-03-02T07:04:10.698481 #27620]  INFO -- default-centos65:  python-libs                   x86_64 2.6.6-52.el6                base    5.3 M
+I, [2015-03-02T07:04:10.698481 #27620]  INFO -- default-centos65:  rpm                           x86_64 4.8.0-38.el6_6              updates 901 k
+I, [2015-03-02T07:04:10.698481 #27620]  INFO -- default-centos65:  rpm-libs                      x86_64 4.8.0-38.el6_6              updates 313 k
+I, [2015-03-02T07:04:10.698981 #27620]  INFO -- default-centos65:  rpm-python                    x86_64 4.8.0-38.el6_6              updates  57 k
+I, [2015-03-02T07:04:10.698981 #27620]  INFO -- default-centos65:  rsyslog                       x86_64 5.8.10-10.el6_6             updates 650 k
+I, [2015-03-02T07:04:10.698981 #27620]  INFO -- default-centos65:  selinux-policy                noarch 3.7.19-260.el6_6.2          updates 863 k
+I, [2015-03-02T07:04:10.698981 #27620]  INFO -- default-centos65:  selinux-policy-targeted       noarch 3.7.19-260.el6_6.2          updates 3.0 M
+I, [2015-03-02T07:04:10.698981 #27620]  INFO -- default-centos65:  shadow-utils                  x86_64 2:4.1.4.2-19.el6            base    899 k
+I, [2015-03-02T07:04:10.698981 #27620]  INFO -- default-centos65:  shared-mime-info              x86_64 0.70-6.el6                  base    209 k
+I, [2015-03-02T07:04:10.698981 #27620]  INFO -- default-centos65:  sudo                          x86_64 1.8.6p3-15.el6              base    704 k
+I, [2015-03-02T07:04:10.698981 #27620]  INFO -- default-centos65:  system-config-firewall-base   noarch 1.2.27-7.2.el6_6            updates 434 k
+I, [2015-03-02T07:04:10.698981 #27620]  INFO -- default-centos65:  tzdata                        noarch 2015a-1.el6                 updates 440 k
+I, [2015-03-02T07:04:10.698981 #27620]  INFO -- default-centos65:  udev                          x86_64 147-2.57.el6                base    349 k
+I, [2015-03-02T07:04:10.699481 #27620]  INFO -- default-centos65:  upstart                       x86_64 0.6.5-13.el6_5.3            base    177 k
+I, [2015-03-02T07:04:10.699481 #27620]  INFO -- default-centos65:  util-linux-ng                 x86_64 2.17.2-12.18.el6            base    1.6 M
+I, [2015-03-02T07:04:10.699481 #27620]  INFO -- default-centos65:  wget                          x86_64 1.12-5.el6_6.1              updates 483 k
+I, [2015-03-02T07:04:10.699481 #27620]  INFO -- default-centos65:  xz-libs                       x86_64 4.999.9-0.5.beta.20091007git.el6
+I, [2015-03-02T07:04:10.699481 #27620]  INFO -- default-centos65:                                                            base     89 k
+I, [2015-03-02T07:04:10.699481 #27620]  INFO -- default-centos65:  yum                           noarch 3.2.29-60.el6.centos        base    1.0 M
+I, [2015-03-02T07:04:10.699481 #27620]  INFO -- default-centos65:  yum-plugin-fastestmirror      noarch 1.1.30-30.el6               base     31 k
+I, [2015-03-02T07:04:10.699481 #27620]  INFO -- default-centos65: 
+I, [2015-03-02T07:04:10.699981 #27620]  INFO -- default-centos65: Transaction Summary
+I, [2015-03-02T07:04:10.699981 #27620]  INFO -- default-centos65: ================================================================================
+I, [2015-03-02T07:04:10.699981 #27620]  INFO -- default-centos65: Install       1 Package(s)
+I, [2015-03-02T07:04:10.699981 #27620]  INFO -- default-centos65: Upgrade     113 Package(s)
+I, [2015-03-02T07:04:10.699981 #27620]  INFO -- default-centos65: 
+I, [2015-03-02T07:04:10.699981 #27620]  INFO -- default-centos65: Total download size: 116 M
+I, [2015-03-02T07:04:10.699981 #27620]  INFO -- default-centos65: Is this ok [y/N]: Exiting on user Command
+I, [2015-03-02T07:04:10.699981 #27620]  INFO -- default-centos65: STDERR: 
+I, [2015-03-02T07:04:10.699981 #27620]  INFO -- default-centos65: ---- End output of yum update ----
+I, [2015-03-02T07:04:10.699981 #27620]  INFO -- default-centos65: Ran yum update returned 1
+I, [2015-03-02T07:04:10.722985 #27620]  INFO -- default-centos65: [2015-03-02T13:04:09+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2015-03-02T07:04:10.737488 #27620] ERROR -- default-centos65: Converge failed on instance <default-centos65>.
+E, [2015-03-02T07:04:10.737488 #27620] ERROR -- default-centos65: ------Exception-------
+E, [2015-03-02T07:04:10.737488 #27620] ERROR -- default-centos65: Class: Kitchen::ActionFailed
+E, [2015-03-02T07:04:10.737488 #27620] ERROR -- default-centos65: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-03-02T07:04:10.737488 #27620] ERROR -- default-centos65: ---Nested Exception---
+E, [2015-03-02T07:04:10.737488 #27620] ERROR -- default-centos65: Class: Kitchen::SSHFailed
+E, [2015-03-02T07:04:10.737988 #27620] ERROR -- default-centos65: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-solo --config /tmp/kitchen/solo.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json
+']
+E, [2015-03-02T07:04:10.737988 #27620] ERROR -- default-centos65: ------Backtrace-------
+E, [2015-03-02T07:04:10.737988 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:152:in `rescue in run_remote'
+E, [2015-03-02T07:04:10.737988 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:148:in `run_remote'
+E, [2015-03-02T07:04:10.737988 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:50:in `block in converge'
+E, [2015-03-02T07:04:10.737988 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/ssh.rb:70:in `initialize'
+E, [2015-03-02T07:04:10.737988 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `new'
+E, [2015-03-02T07:04:10.737988 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/driver/ssh_base.rb:45:in `converge'
+E, [2015-03-02T07:04:10.737988 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2015-03-02T07:04:10.737988 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `public_send'
+E, [2015-03-02T07:04:10.737988 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `block in perform_action'
+E, [2015-03-02T07:04:10.738489 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `call'
+E, [2015-03-02T07:04:10.738489 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:416:in `synchronize_or_call'
+E, [2015-03-02T07:04:10.738489 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:381:in `block in action'
+E, [2015-03-02T07:04:10.738489 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2015-03-02T07:04:10.738489 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:380:in `action'
+E, [2015-03-02T07:04:10.738489 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:352:in `perform_action'
+E, [2015-03-02T07:04:10.738489 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:312:in `converge_action'
+E, [2015-03-02T07:04:10.738489 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:292:in `block in transition_to'
+E, [2015-03-02T07:04:10.738489 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `each'
+E, [2015-03-02T07:04:10.738489 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:291:in `transition_to'
+E, [2015-03-02T07:04:10.738989 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:130:in `converge'
+E, [2015-03-02T07:04:10.738989 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `public_send'
+E, [2015-03-02T07:04:10.738989 #27620] ERROR -- default-centos65: C:/opscode/chef/embedded/lib/ruby/gems/1.9.1/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:176:in `block (2 levels) in run_action'
+E, [2015-03-02T07:04:10.738989 #27620] ERROR -- default-centos65: ----------------------
+I, [2015-03-02T07:09:25.497928 #27128]  INFO -- default-centos65: -----> Converging <default-centos65>...
+I, [2015-03-02T07:09:25.503429 #27128]  INFO -- default-centos65: Preparing files for transfer
+I, [2015-03-02T07:09:25.503929 #27128]  INFO -- default-centos65: Preparing dna.json
+I, [2015-03-02T07:09:25.505929 #27128]  INFO -- default-centos65: Preparing current project directory as a cookbook
+I, [2015-03-02T07:09:25.532935 #27128]  INFO -- default-centos65: Removing non-cookbook files before transfer
+I, [2015-03-02T07:09:25.553439 #27128]  INFO -- default-centos65: Preparing solo.rb
+I, [2015-03-02T07:09:26.952219 #27128]  INFO -- default-centos65: -----> Chef Omnibus installation detected (install only if missing)
+I, [2015-03-02T07:09:26.994227 #27128]  INFO -- default-centos65: Transferring files to <default-centos65>
+I, [2015-03-02T07:09:28.525533 #27128]  INFO -- default-centos65: Starting Chef Client, version 12.0.3
+I, [2015-03-02T07:09:39.990326 #27128]  INFO -- default-centos65: Compiling Cookbooks...
+I, [2015-03-02T07:09:39.997327 #27128]  INFO -- default-centos65: Converging 1 resources
+I, [2015-03-02T07:09:40.002828 #27128]  INFO -- default-centos65: Recipe: yum::default
+I, [2015-03-02T07:15:36.879689 #27128]  INFO -- default-centos65: 
+I, [2015-03-02T07:15:36.879689 #27128]  INFO -- default-centos65:     - execute yum update -y
+I, [2015-03-02T07:15:36.890692 #27128]  INFO -- default-centos65: 
+I, [2015-03-02T07:15:36.890692 #27128]  INFO -- default-centos65: Running handlers:
+I, [2015-03-02T07:15:36.891692 #27128]  INFO -- default-centos65: Running handlers complete
+I, [2015-03-02T07:15:36.902694 #27128]  INFO -- default-centos65: Chef Client finished, 1/1 resources updated in 368.535283368 seconds
+I, [2015-03-02T07:15:37.481810 #27128]  INFO -- default-centos65: Finished converging <default-centos65> (6m11.98s).
